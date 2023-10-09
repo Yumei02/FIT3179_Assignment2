@@ -1,0 +1,52 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "suicide_deaths_dataset1.csv"},
+    "transform": [
+      {
+        "window": [{"op": "row_number", "as": "id"}],
+        "sort": [{"field": "Year", "order": "descending"}]
+      },
+      {"calculate": "ceil (datum.id / 20)", "as": "row"},
+      {"calculate": "datum.id - datum.row * 20", "as": "col"},
+      {
+        "joinaggregate": [{"op": "sum", "field": "NumberofSuicideDeaths", "as": "TotalOrigin"}]
+      },
+      {
+        "joinaggregate": [
+          {"op": "sum", "field": "NumberofSuicideDeaths", "as": "TotalOriginGrouped"}
+        ],
+        "groupby": ["Year"]
+      },
+      {
+        "calculate": "round(datum.TotalOriginGrouped/datum.TotalOrigin * 100)",
+        "as": "PercentOfTotal"
+      }
+    ],
+    "mark": {
+      "type": "circle",
+      "filled": true,
+      "tooltip": true,
+      "stroke": "black",
+      "strokeWidth": 0.7
+    },
+    "encoding": {
+      "x": {"field": "col", "type": "ordinal", "axis": null},
+      "y": {"field": "row", "type": "ordinal", "axis": null, "sort": "-y"},
+      "color": {
+        "field": "Year",
+        "type": "nominal",
+        "scale": {"scheme": "set1"},
+        "legend": {
+          "orient": "right",
+          "offset": 10,
+          "labelOffset": 3,
+          "titlePadding": 5,
+          "titleFontSize": 20
+        }
+      },
+      "size": {"value": 241},
+      "tooltip": [{"field": "PercentOfTotal", "type": "quantitative"}]
+    }
+  }
+
+  
