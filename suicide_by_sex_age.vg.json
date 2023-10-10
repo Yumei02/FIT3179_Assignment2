@@ -1,12 +1,17 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A ranged dot plot that uses 'layer' to convey changing life expectancy for the five most populous countries (between 1955 and 2000).",
-    "data": {"url": "Suicide_by_sex_age_dataset.csv"},
+    "data": {"url": "Suicide_by_sex_age.csv"},
     "transform": [
       {
         "filter": {
           "field": "Age_group",
           "oneOf": ["15–19", "20–24", "25–29", "30–34", "35–39", "40–44", "45–49", "50–54", "55–59", "60–64", "65–69", "70–74", "75–79", "80–84", "85+"]
+        }
+      },
+      {
+        "filter": {
+          "field": "Year",
+          "oneOf": [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021]
         }
       },
       {
@@ -27,9 +32,9 @@
         "type": "nominal",
         "title": "Age Group",
         "axis": {
-          "offset": 18,
+          "offset": 5,
           "ticks": false,
-          "minExtent": 70,
+          "minExtent": 90,
           "domain": false
         }
       }
