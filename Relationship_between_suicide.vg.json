@@ -1,21 +1,49 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "The Relationship between Ambulance Attendences for Suicide or Suicide Attempts by Modality",
+    "width": 300,
+    "height": 300,
     "data": {
       "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_attempt_and_suicide_deaths.csv"
     },
+    "layer": [
+    {
+    "selection":{
+    "Modality_selection":{
+    "type":"multi",
+    "fields":["Modality"],
+    "bind": "legend"
+    }},
+    
     "mark": "point",
     "encoding": {
       "x": {
         "field": "Death_by_suicide",
         "type": "quantitative",
+        "title": "Deaths by Suicide",
         "scale": {"zero": false}
       },
       "y": {
         "field": "Suicide_Attempt",
         "type": "quantitative",
+        "title": "Suicide Attempt",
         "scale": {"zero": false}
       },
-      "color": {"field": "Modality", "type": "nominal"},
-      "shape": {"field": "Modality", "type": "nominal"}
+      "color": {"field": "Modality", 
+                 "type": "nominal",
+                 "scale": {
+                    "domain": ["AOD", "Hanging","Other"],
+                    "range": ["#ed3228", "#f0ea3c", "#5157f0"]
+                  }
+                 },
+                 
+      "shape": {"field": "Modality", "type": "nominal","scale": {
+        "domain": ["AOD", "Hanging","Other"],
+        "range": ["circle", "square", "triangle-up"]
+      }},
+      "opacity":{"condition":{"selection":"Modality_selection", "value":1}, "value":0}
+      
     }
-  }
+}
+]
+}
