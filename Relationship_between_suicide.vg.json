@@ -1,0 +1,22 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A scatterplot showing body mass and flipper lengths of penguins.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_attempt_and_suicide_deaths.csv"
+    },
+    "mark": "point",
+    "encoding": {
+      "x": {
+        "field": "Death by suicide",
+        "type": "quantitative",
+        "scale": {"zero": false}
+      },
+      "y": {
+        "field": "Suicide Attempt",
+        "type": "quantitative",
+        "scale": {"zero": false}
+      },
+      "color": {"field": "Modality", "type": "nominal"},
+      "shape": {"field": "Modality", "type": "nominal"}
+    }
+  }
