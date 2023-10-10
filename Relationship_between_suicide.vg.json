@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A scatterplot showing body mass and flipper lengths of penguins.",
     "data": {
       "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_attempt_and_suicide_deaths.csv"
     },
