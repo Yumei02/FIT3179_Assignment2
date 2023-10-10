@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "suicide_deaths_dataset1.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_deaths_dataset1.csv"},
     "transform": [
       {
         "window": [{"op": "row_number", "as": "id"}],

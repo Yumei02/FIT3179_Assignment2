@@ -1,6 +1,22 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "Suicide_by_sex_age.csv"},
+    "title": "Suicide Rate by Age Groups for Males and Feamles",
+    "width": 600,
+    "height": 450,
+    "params": [
+        {
+        "name": "Year_selection",
+        "value": 2012,
+        "bind": {
+        "input": "range",
+        "min": 2012,
+        "max": 2021,
+        "step": 1,
+        "name": "Year: "
+        }
+        }
+        ],
+    "data": {"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_by_sex_age.csv"},
     "transform": [
       {
         "filter": {
@@ -10,31 +26,38 @@
       },
       {
         "filter": {
-          "field": "Year",
-          "oneOf": [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021]
-        }
-      },
-      {
-        "filter": {
           "field": "Sex",
           "oneOf": ["Males", "Females"]
         }
+      },
+      {"filter": "datum.Year == Year_selection"},
+      {
+        "joinaggregate": [
+          {"op": "sum", "field": "Suicide_rate", "as": "Suicide_rate"}
+        ],
+        "groupby": ["Age_group","Sex"]
       }
     ],
     "encoding": {
       "x": {
         "field": "Suicide_rate",
         "type": "quantitative",
-        "title": "Suicide Rate"
+        "title": "Suicide Rate",
+        "axis": {"offset": 10, "grid": false, "values": [2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40]},
+        "scale": {
+            "domain": [0, 40]
+            
+          }
       },
       "y": {
         "field": "Age_group",
-        "type": "nominal",
+        "type": "ordinal",
+        "sort": "descending",
         "title": "Age Group",
         "axis": {
           "offset": 5,
           "ticks": false,
-          "minExtent": 90,
+          "minExtent": 50,
           "domain": false
         }
       }
@@ -45,9 +68,11 @@
         "encoding": {
           "detail": {
             "field": "Age_group",
-            "type": "nominal"
+            "type": "ordinal"
           },
-          "color": {"value": "#db646f"}
+          "color": {"value": "#787d7b"},
+          "size": {"value": 8},
+          "opacity": {"value": 0.5}
         }
       },
       {
@@ -61,13 +86,28 @@
             "type": "nominal",
             "scale": {
               "domain": ["Males", "Females"],
-              "range": ["#e6959c", "#911a24"]
+              "range": ["#2b6682", "#f0cc02"]
             },
             "title": "Sex"
           },
           "size": {"value": 300},
+          "tooltip": [
+            {"field": "Age_group", "type": "ordinal", "title": "Age group"},
+            {"field": "Suicide_rate", "type": "quantitative", "title": "Suicide rate"}
+          ],
           "opacity": {"value": 1}
         }
+      },
+      {
+        "mark": {"type": "text", "dx":-3, "dy":18},
+        "encoding": {
+          "text": {"field": "Suicide_rate"}
+        }
       }
-    ]
+    ],
+    "config": {
+        "view": {
+           "stroke":"transparent"
+        }
+      }
   }
