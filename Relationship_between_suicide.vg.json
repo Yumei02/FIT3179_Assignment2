@@ -6,12 +6,12 @@
     "mark": "point",
     "encoding": {
       "x": {
-        "field": "Death by suicide",
+        "field": "Death_by_suicide",
         "type": "quantitative",
         "scale": {"zero": false}
       },
       "y": {
-        "field": "Suicide Attempt",
+        "field": "Suicide_Attempt",
         "type": "quantitative",
         "scale": {"zero": false}
       },
