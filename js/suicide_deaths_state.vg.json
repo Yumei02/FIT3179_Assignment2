@@ -9,7 +9,7 @@
     ],
     "transform": [{
       "sort": [
-        {"field": "NumberofSuicideDeaths", "order": "descending"}
+        {"field": "NumberofSuicideDeath", "order": "descending"}
       ],
       "window": [{
         "op": "rank",
@@ -64,7 +64,7 @@
         },"tooltip": [
           
           {"field": "State", "type": "nominal", "title": "State"},
-          {"field": "NumberofSuicideDeaths", "type": "quantitative", "title": "Number of Suicide Deaths"}
+          {"field": "NumberofSuicideDeath", "type": "quantitative", "title": "Number of Suicide Deaths"}
         ]
       }
   
