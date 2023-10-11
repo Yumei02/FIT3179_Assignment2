@@ -1,0 +1,311 @@
+﻿State,PHN name,Yer,Suicide_Rate
+NSW,Central and Eastern Sydney,2012,113
+NSW,Central and Eastern Sydney,2013,133
+NSW,Central and Eastern Sydney,2014,167
+NSW,Central and Eastern Sydney,2015,145
+NSW,Central and Eastern Sydney,2016,123
+NSW,Central and Eastern Sydney,2017,171
+NSW,Central and Eastern Sydney,2018,176
+NSW,Central and Eastern Sydney,2019,155
+NSW,Central and Eastern Sydney,2020,145
+NSW,Central and Eastern Sydney,2021,142
+NSW,Northern Sydney,2012,69
+NSW,Northern Sydney,2013,76
+NSW,Northern Sydney,2014,83
+NSW,Northern Sydney,2015,71
+NSW,Northern Sydney,2016,62
+NSW,Northern Sydney,2017,79
+NSW,Northern Sydney,2018,79
+NSW,Northern Sydney,2019,73
+NSW,Northern Sydney,2020,82
+NSW,Northern Sydney,2021,60
+NSW,Western Sydney,2012,80
+NSW,Western Sydney,2013,59
+NSW,Western Sydney,2014,76
+NSW,Western Sydney,2015,72
+NSW,Western Sydney,2016,78
+NSW,Western Sydney,2017,62
+NSW,Western Sydney,2018,83
+NSW,Western Sydney,2019,64
+NSW,Western Sydney,2020,62
+NSW,Western Sydney,2021,69
+NSW,Nepean Blue Mountains,2012,33
+NSW,Nepean Blue Mountains,2013,30
+NSW,Nepean Blue Mountains,2014,48
+NSW,Nepean Blue Mountains,2015,45
+NSW,Nepean Blue Mountains,2016,47
+NSW,Nepean Blue Mountains,2017,57
+NSW,Nepean Blue Mountains,2018,49
+NSW,Nepean Blue Mountains,2019,34
+NSW,Nepean Blue Mountains,2020,43
+NSW,Nepean Blue Mountains,2021,40
+NSW,South Western Sydney,2012,64
+NSW,South Western Sydney,2013,64
+NSW,South Western Sydney,2014,80
+NSW,South Western Sydney,2015,82
+NSW,South Western Sydney,2016,72
+NSW,South Western Sydney,2017,89
+NSW,South Western Sydney,2018,99
+NSW,South Western Sydney,2019,97
+NSW,South Western Sydney,2020,71
+NSW,South Western Sydney,2021,65
+NSW,South Eastern NSW,2012,71
+NSW,South Eastern NSW,2013,69
+NSW,South Eastern NSW,2014,62
+NSW,South Eastern NSW,2015,82
+NSW,South Eastern NSW,2016,79
+NSW,South Eastern NSW,2017,90
+NSW,South Eastern NSW,2018,89
+NSW,South Eastern NSW,2019,103
+NSW,South Eastern NSW,2020,83
+NSW,South Eastern NSW,2021,86
+NSW,Western NSW,2012,25
+NSW,Western NSW,2013,40
+NSW,Western NSW,2014,39
+NSW,Western NSW,2015,38
+NSW,Western NSW,2016,41
+NSW,Western NSW,2017,45
+NSW,Western NSW,2018,50
+NSW,Western NSW,2019,52
+NSW,Western NSW,2020,53
+NSW,Western NSW,2021,57
+NSW,Hunter New England and Central Coast,2012,163
+NSW,Hunter New England and Central Coast,2013,143
+NSW,Hunter New England and Central Coast,2014,151
+NSW,Hunter New England and Central Coast,2015,178
+NSW,Hunter New England and Central Coast,2016,172
+NSW,Hunter New England and Central Coast,2017,193
+NSW,Hunter New England and Central Coast,2018,181
+NSW,Hunter New England and Central Coast,2019,218
+NSW,Hunter New England and Central Coast,2020,194
+NSW,Hunter New England and Central Coast,2021,181
+NSW,North Coast,2012,70
+NSW,North Coast,2013,67
+NSW,North Coast,2014,79
+NSW,North Coast,2015,81
+NSW,North Coast,2016,85
+NSW,North Coast,2017,86
+NSW,North Coast,2018,83
+NSW,North Coast,2019,99
+NSW,North Coast,2020,89
+NSW,North Coast,2021,115
+NSW,Murrumbidgee,2012,28
+NSW,Murrumbidgee,2013,26
+NSW,Murrumbidgee,2014,31
+NSW,Murrumbidgee,2015,36
+NSW,Murrumbidgee,2016,48
+NSW,Murrumbidgee,2017,46
+NSW,Murrumbidgee,2018,37
+NSW,Murrumbidgee,2019,40
+NSW,Murrumbidgee,2020,41
+NSW,Murrumbidgee,2021,48
+Vic,North Western Melbourne,2012,121
+Vic,North Western Melbourne,2013,132
+Vic,North Western Melbourne,2014,153
+Vic,North Western Melbourne,2015,162
+Vic,North Western Melbourne,2016,170
+Vic,North Western Melbourne,2017,161
+Vic,North Western Melbourne,2018,164
+Vic,North Western Melbourne,2019,164
+Vic,North Western Melbourne,2020,165
+Vic,North Western Melbourne,2021,140
+Vic,Eastern Melbourne,2012,104
+Vic,Eastern Melbourne,2013,120
+Vic,Eastern Melbourne,2014,137
+Vic,Eastern Melbourne,2015,136
+Vic,Eastern Melbourne,2016,127
+Vic,Eastern Melbourne,2017,149
+Vic,Eastern Melbourne,2018,132
+Vic,Eastern Melbourne,2019,152
+Vic,Eastern Melbourne,2020,134
+Vic,Eastern Melbourne,2021,133
+Vic,South Eastern Melbourne,2012,133
+Vic,South Eastern Melbourne,2013,128
+Vic,South Eastern Melbourne,2014,156
+Vic,South Eastern Melbourne,2015,179
+Vic,South Eastern Melbourne,2016,170
+Vic,South Eastern Melbourne,2017,189
+Vic,South Eastern Melbourne,2018,165
+Vic,South Eastern Melbourne,2019,165
+Vic,South Eastern Melbourne,2020,165
+Vic,South Eastern Melbourne,2021,172
+Vic,Gippsland,2012,31
+Vic,Gippsland,2013,34
+Vic,Gippsland,2014,46
+Vic,Gippsland,2015,40
+Vic,Gippsland,2016,36
+Vic,Gippsland,2017,36
+Vic,Gippsland,2018,40
+Vic,Gippsland,2019,42
+Vic,Gippsland,2020,50
+Vic,Gippsland,2021,62
+Vic,Murray,2012,63
+Vic,Murray,2013,68
+Vic,Murray,2014,80
+Vic,Murray,2015,92
+Vic,Murray,2016,91
+Vic,Murray,2017,89
+Vic,Murray,2018,88
+Vic,Murray,2019,105
+Vic,Murray,2020,84
+Vic,Murray,2021,87
+Vic,Western Victoria,2012,65
+Vic,Western Victoria,2013,73
+Vic,Western Victoria,2014,100
+Vic,Western Victoria,2015,78
+Vic,Western Victoria,2016,79
+Vic,Western Victoria,2017,89
+Vic,Western Victoria,2018,89
+Vic,Western Victoria,2019,100
+Vic,Western Victoria,2020,92
+Vic,Western Victoria,2021,81
+Qld,Brisbane North,2012,108
+Qld,Brisbane North,2013,124
+Qld,Brisbane North,2014,105
+Qld,Brisbane North,2015,131
+Qld,Brisbane North,2016,121
+Qld,Brisbane North,2017,136
+Qld,Brisbane North,2018,140
+Qld,Brisbane North,2019,142
+Qld,Brisbane North,2020,142
+Qld,Brisbane North,2021,128
+Qld,Brisbane South,2012,120
+Qld,Brisbane South,2013,142
+Qld,Brisbane South,2014,121
+Qld,Brisbane South,2015,142
+Qld,Brisbane South,2016,130
+Qld,Brisbane South,2017,165
+Qld,Brisbane South,2018,167
+Qld,Brisbane South,2019,157
+Qld,Brisbane South,2020,154
+Qld,Brisbane South,2021,135
+Qld,Gold Coast,2012,76
+Qld,Gold Coast,2013,76
+Qld,Gold Coast,2014,77
+Qld,Gold Coast,2015,87
+Qld,Gold Coast,2016,72
+Qld,Gold Coast,2017,111
+Qld,Gold Coast,2018,97
+Qld,Gold Coast,2019,83
+Qld,Gold Coast,2020,77
+Qld,Gold Coast,2021,102
+Qld,Darling Downs and West Moreton,2012,80
+Qld,Darling Downs and West Moreton,2013,87
+Qld,Darling Downs and West Moreton,2014,80
+Qld,Darling Downs and West Moreton,2015,83
+Qld,Darling Downs and West Moreton,2016,80
+Qld,Darling Downs and West Moreton,2017,88
+Qld,Darling Downs and West Moreton,2018,90
+Qld,Darling Downs and West Moreton,2019,120
+Qld,Darling Downs and West Moreton,2020,116
+Qld,Darling Downs and West Moreton,2021,109
+Qld,Western Queensland,2012,16
+Qld,Western Queensland,2013,18
+Qld,Western Queensland,2014,17
+Qld,Western Queensland,2015,15
+Qld,Western Queensland,2016,22
+Qld,Western Queensland,2017,10
+Qld,Western Queensland,2018,13
+Qld,Western Queensland,2019,13
+Qld,Western Queensland,2020,11
+Qld,Western Queensland,2021,11
+Qld,"Central Queensland, Wide Bay, Sunshine Coast",2012,120
+Qld,"Central Queensland, Wide Bay, Sunshine Coast",2013,101
+Qld,"Central Queensland, Wide Bay, Sunshine Coast",2014,128
+Qld,"Central Queensland, Wide Bay, Sunshine Coast",2015,152
+Qld,"Central Queensland, Wide Bay, Sunshine Coast",2016,131
+Qld,"Central Queensland, Wide Bay, Sunshine Coast",2017,162
+Qld,"Central Queensland, Wide Bay, Sunshine Coast",2018,162
+Qld,"Central Queensland, Wide Bay, Sunshine Coast",2019,132
+Qld,"Central Queensland, Wide Bay, Sunshine Coast",2020,130
+Qld,"Central Queensland, Wide Bay, Sunshine Coast",2021,161
+Qld,Northern Queensland,2012,104
+Qld,Northern Queensland,2013,121
+Qld,Northern Queensland,2014,124
+Qld,Northern Queensland,2015,145
+Qld,Northern Queensland,2016,127
+Qld,Northern Queensland,2017,137
+Qld,Northern Queensland,2018,130
+Qld,Northern Queensland,2019,147
+Qld,Northern Queensland,2020,123
+Qld,Northern Queensland,2021,135
+SA,Adelaide,2012,133
+SA,Adelaide,2013,144
+SA,Adelaide,2014,171
+SA,Adelaide,2015,160
+SA,Adelaide,2016,158
+SA,Adelaide,2017,147
+SA,Adelaide,2018,148
+SA,Adelaide,2019,167
+SA,Adelaide,2020,155
+SA,Adelaide,2021,162
+SA,Country SA,2012,65
+SA,Country SA,2013,58
+SA,Country SA,2014,69
+SA,Country SA,2015,74
+SA,Country SA,2016,63
+SA,Country SA,2017,78
+SA,Country SA,2018,59
+SA,Country SA,2019,80
+SA,Country SA,2020,76
+SA,Country SA,2021,63
+WA,Perth North,2012,140
+WA,Perth North,2013,131
+WA,Perth North,2014,125
+WA,Perth North,2015,139
+WA,Perth North,2016,125
+WA,Perth North,2017,169
+WA,Perth North,2018,144
+WA,Perth North,2019,161
+WA,Perth North,2020,139
+WA,Perth North,2021,144
+WA,Perth South,2012,130
+WA,Perth South,2013,113
+WA,Perth South,2014,137
+WA,Perth South,2015,159
+WA,Perth South,2016,126
+WA,Perth South,2017,149
+WA,Perth South,2018,125
+WA,Perth South,2019,148
+WA,Perth South,2020,133
+WA,Perth South,2021,126
+WA,Country WA,2012,92
+WA,Country WA,2013,85
+WA,Country WA,2014,99
+WA,Country WA,2015,102
+WA,Country WA,2016,115
+WA,Country WA,2017,95
+WA,Country WA,2018,107
+WA,Country WA,2019,100
+WA,Country WA,2020,104
+WA,Country WA,2021,115
+Tas,Tasmania,2012,69
+Tas,Tasmania,2013,72
+Tas,Tasmania,2014,68
+Tas,Tasmania,2015,84
+Tas,Tasmania,2016,93
+Tas,Tasmania,2017,78
+Tas,Tasmania,2018,78
+Tas,Tasmania,2019,104
+Tas,Tasmania,2020,87
+Tas,Tasmania,2021,78
+NT,Northern Territory,2012,45
+NT,Northern Territory,2013,33
+NT,Northern Territory,2014,55
+NT,Northern Territory,2015,45
+NT,Northern Territory,2016,44
+NT,Northern Territory,2017,51
+NT,Northern Territory,2018,45
+NT,Northern Territory,2019,49
+NT,Northern Territory,2020,46
+NT,Northern Territory,2021,46
+ACT,Australian Capital Territory,2012,24
+ACT,Australian Capital Territory,2013,37
+ACT,Australian Capital Territory,2014,37
+ACT,Australian Capital Territory,2015,45
+ACT,Australian Capital Territory,2016,28
+ACT,Australian Capital Territory,2017,59
+ACT,Australian Capital Territory,2018,50
+ACT,Australian Capital Territory,2019,52
+ACT,Australian Capital Territory,2020,57
+ACT,Australian Capital Territory,2021,65
