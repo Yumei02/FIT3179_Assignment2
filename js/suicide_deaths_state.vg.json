@@ -1,50 +1,73 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600, "height": 400,
   "data": {"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_deaths_dataset.csv"},
-  "transform": [
-    {
-      "window": [{"op": "row_number", "as": "id"}],
-      "sort": [{"field": "Year", "order": "ascending"}]
-    },
-    {"calculate": "ceil (datum.id / 20)", "as": "row"},
-    {"calculate": "datum.id - datum.row * 20", "as": "col"},
-    {
-      "joinaggregate": [{"op": "sum", "field": "NumberofSuicideDeaths", "as": "TotalOrigin"}]
-    },
-    {
-      "joinaggregate": [
-        {"op": "sum", "field": "NumberofSuicideDeaths", "as": "TotalOriginGrouped"}
+  "params": [
+    { "name": "Top_N", "value": 5 ,
+			"bind": {"input": "range", "min": 1, "max": 8, "step": 1 }
+		}
+    ],
+    "transform": [{
+      "sort": [
+        {"field": "NumberofSuicideDeaths", "order": "descending"}
       ],
+      "window": [{
+        "op": "rank",
+        "as": "rank"
+      }],
       "groupby": ["Year"]
-    },
-    {
-      "calculate": "round(datum.TotalOriginGrouped/datum.TotalOrigin * 100)",
-      "as": "PercentOfTotal"
-    }
-  ],
-  "mark": {
-    "type": "circle",
-    "filled": true,
-    "tooltip": true,
-    "stroke": "black",
-    "strokeWidth": 0.7
-  },
-  "encoding": {
-    "x": {"field": "col", "type": "ordinal", "axis": null},
-    "y": {"field": "row", "type": "ordinal", "axis": null, "sort": "-y"},
-    "color": {
-      "field": "Year",
-      "type": "nominal",
-      "scale": {"scheme": "set1"},
-      "legend": {
-        "orient": "right",
-        "offset": 10,
-        "labelOffset": 3,
-        "titlePadding": 5,
-        "titleFontSize": 20
+      },
+        { "filter": "datum.rank <= Top_N" }
+      ],
+  
+      "encoding": {
+        "x": {  "field": "Year",
+              "type": "ordinal" ,
+              "sort": [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021] ,
+              "axis": { "labelAngle": 0 , "labelFontSize": 12 , "titleFontSize": 14},
+              "title": ""
+              } ,
+        "y": {  "field": "rank",
+                "type": "quantitative",
+                "sort": "descending",
+                "scale": {"domain": [0.5, {"expr": "Top_N+0.5"} ]},
+                "axis": { "labelAngle": 0 , "labelFontSize": 12 ,
+                          "tickMinStep": 1 ,
+                          "tickCount": {"expr": "Top_N"},
+                          "titleFontSize": 14 },
+                "title":  "State's ranking"
+              }
+        } ,
+  
+    "layer": [
+  
+  
+       {
+  
+      "mark": {"type": "line", "interpolate": "monotone" },
+      "encoding": {
+        "color": { "field": "State" } ,
+        "size":{
+            "condition":  {"param": "sel_brand_leg", "empty": false, "value": 3},
+            "value": 1
+          }
       }
     },
-    "size": {"value": 241},
-    "tooltip": [{"field": "Year", "type": "nominal"}]
-  }
-}
+    {
+      "params": [
+        { "name": "sel_brand_leg", "select": {"type": "point" ,  "on": "click",  "fields": ["State"]},
+          "bind": "legend"
+        }
+      ],
+      "mark": {"type" :"tick", "thickness": 5 },
+      "encoding": {
+        "color": {
+            "condition":  {"param": "sel_brand_leg", "empty": false, "value": "black"} ,
+            "field": "State"
+        }
+      }
+  
+    }
+  ]
+  
+    } 
