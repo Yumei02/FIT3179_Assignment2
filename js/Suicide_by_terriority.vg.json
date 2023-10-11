@@ -3,25 +3,26 @@
     "data": {
       "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_rate_by_terriority.csv"
     },
+    
     "transform": [
       {
         "aggregate": [
           {
-            "op": "sum",
-            "as": "sum_*"
+            "op": "count",
+            "as": "count_*"
           }
         ],
         "groupby": [
           "State",
-          "PHN"
+          "PHN name"
         ]
       },
       {
-        "stack": "sum_*",
+        "stack": "count_*",
         "groupby": [],
         "as": [
-          "stack_sum_State1",
-          "stack_sum_State2"
+          "stack_count_State1",
+          "stack_count_State2"
         ],
         "offset": "normalize",
         "sort": [
@@ -35,21 +36,21 @@
         "window": [
           {
             "op": "min",
-            "field": "stack_count_Origin1",
+            "field": "stack_count_State1",
             "as": "x"
           },
           {
             "op": "max",
-            "field": "stack_count_Origin2",
+            "field": "stack_count_State2",
             "as": "x2"
           },
           {
             "op": "dense_rank",
-            "as": "rank_Cylinders"
+            "as": "rank_PHN"
           },
           {
             "op": "distinct",
-            "field": "PHN",
+            "field": "PHN name",
             "as": "distinct_PHN"
           }
         ],
@@ -62,7 +63,7 @@
         ],
         "sort": [
           {
-            "field": "PHN",
+            "field": "PHN name",
             "order": "ascending"
           }
         ]
@@ -71,7 +72,7 @@
         "window": [
           {
             "op": "dense_rank",
-            "as": "rank_Origin"
+            "as": "rank_State"
           }
         ],
         "frame": [
@@ -86,9 +87,9 @@
         ]
       },
       {
-        "stack": "sum_*",
+        "stack": "count_*",
         "groupby": [
-          "State", "PHN"
+          "State"
         ],
         "as": [
           "y",
@@ -97,25 +98,31 @@
         "offset": "normalize",
         "sort": [
           {
-            "field": "PHN",
+            "field": "PHN name",
             "order": "ascending"
           }
         ]
       },
       {
-        "calculate": "datum.y + (datum.rank_Cylinders - 1) * datum.distinct_Cylinders * 0.01 / 3",
+        "joinaggregate": [
+            {"op": "sum", "field": "Suicide_Rate", "as": "Suicide_Rate"}
+          ],
+          "groupby": ["State"]
+      },
+      {
+        "calculate": "datum.y + (datum.Suicide_Rate - 1) * datum.distinct_PHN * 0.01 / 3",
         "as": "ny"
       },
       {
-        "calculate": "datum.y2 + (datum.rank_Cylinders - 1) * datum.distinct_Cylinders * 0.01 / 3",
+        "calculate": "datum.y2 + (datum.Suicide_Rate - 1) * datum.distinct_PHN * 0.01 / 3",
         "as": "ny2"
       },
       {
-        "calculate": "datum.x + (datum.rank_Origin - 1) * 0.01",
+        "calculate": "datum.x + (datum.rank_State - 1) * 0.01",
         "as": "nx"
       },
       {
-        "calculate": "datum.x2 + (datum.rank_Origin - 1) * 0.01",
+        "calculate": "datum.x2 + (datum.rank_State - 1) * 0.01",
         "as": "nx2"
       },
       {
@@ -174,7 +181,7 @@
                 "legend": null
               },
               "opacity": {
-                "field": "PHN",
+                "field": "PHN name",
                 "type": "nominal",
                 "legend": null
               },
@@ -184,7 +191,7 @@
                   "type": "nominal"
                 },
                 {
-                  "field": "PHN",
+                  "field": "PHN name",
                   "type": "nominal"
                 }
               ]
@@ -209,7 +216,7 @@
                 }
               },
               "text": {
-                "field": "PHN",
+                "field": "PHN name",
                 "type": "nominal"
               }
             }
@@ -226,7 +233,7 @@
       "view": {
         "stroke": ""
       },
-      "concat": {"spacing": 10},
+      "concat": {"spacing": 0},
       "axis": {
         "domain": false,
         "ticks": false,
