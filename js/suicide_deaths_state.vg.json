@@ -39,9 +39,7 @@
               }
         } ,
   
-    "layer": [
-  
-  
+    "layer": [ 
        {
   
       "mark": {"type": "line", "interpolate": "monotone" },
@@ -59,12 +57,16 @@
           "bind": "legend"
         }
       ],
-      "mark": {"type" :"tick", "thickness": 5 },
+      "mark": {"type" :"tick", "thickness": 8 },
       "encoding": {
         "color": {
             "condition":  {"param": "sel_brand_leg", "empty": false, "value": "black"} ,
             "field": "State"
-        }
+        },"tooltip": [
+          
+          {"field": "State", "type": "nominal", "title": "State"},
+          {"field": "NumberofSuicideDeaths", "type": "quantitative", "title": "Number of Suicide Deaths"}
+        ]
       }
   
     }
