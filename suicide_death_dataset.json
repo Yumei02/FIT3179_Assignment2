@@ -1,0 +1,402 @@
+[
+  {
+    "State": "New South Western Australiales",
+    "Year": 2012,
+    "NumberofSuicideDeath": 727
+  },
+  {
+    "State": "Victoria",
+    "Year": 2012,
+    "NumberofSuicideDeath": 514
+  },
+  {
+    "State": "Queensland",
+    "Year": 2012,
+    "NumberofSuicideDeath": 631
+  },
+  {
+    "State": "South Australia",
+    "Year": 2012,
+    "NumberofSuicideDeath": 197
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2012,
+    "NumberofSuicideDeath": 367
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2012,
+    "NumberofSuicideDeath": 71
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2012,
+    "NumberofSuicideDeath": 48
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2012,
+    "NumberofSuicideDeath": 24
+  },
+  {
+    "State": "New South Western Australiales",
+    "Year": 2013,
+    "NumberofSuicideDeath": 718
+  },
+  {
+    "State": "Victoria",
+    "Year": 2013,
+    "NumberofSuicideDeath": 552
+  },
+  {
+    "State": "Queensland",
+    "Year": 2013,
+    "NumberofSuicideDeath": 676
+  },
+  {
+    "State": "South Australia",
+    "Year": 2013,
+    "NumberofSuicideDeath": 203
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2013,
+    "NumberofSuicideDeath": 336
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2013,
+    "NumberofSuicideDeath": 74
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2013,
+    "NumberofSuicideDeath": 33
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2013,
+    "NumberofSuicideDeath": 37
+  },
+  {
+    "State": "New South Western Australiales",
+    "Year": 2014,
+    "NumberofSuicideDeath": 832
+  },
+  {
+    "State": "Victoria",
+    "Year": 2014,
+    "NumberofSuicideDeath": 672
+  },
+  {
+    "State": "Queensland",
+    "Year": 2014,
+    "NumberofSuicideDeath": 658
+  },
+  {
+    "State": "South Australia",
+    "Year": 2014,
+    "NumberofSuicideDeath": 244
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2014,
+    "NumberofSuicideDeath": 367
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2014,
+    "NumberofSuicideDeath": 69
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2014,
+    "NumberofSuicideDeath": 56
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2014,
+    "NumberofSuicideDeath": 38
+  },
+  {
+    "State": "New South Western Australiales",
+    "Year": 2015,
+    "NumberofSuicideDeath": 839
+  },
+  {
+    "State": "Victoria",
+    "Year": 2015,
+    "NumberofSuicideDeath": 686
+  },
+  {
+    "State": "Queensland",
+    "Year": 2015,
+    "NumberofSuicideDeath": 761
+  },
+  {
+    "State": "South Australia",
+    "Year": 2015,
+    "NumberofSuicideDeath": 233
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2015,
+    "NumberofSuicideDeath": 402
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2015,
+    "NumberofSuicideDeath": 84
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2015,
+    "NumberofSuicideDeath": 48
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2015,
+    "NumberofSuicideDeath": 46
+  },
+  {
+    "State": "New South Western Australiales",
+    "Year": 2016,
+    "NumberofSuicideDeath": 822
+  },
+  {
+    "State": "Victoria",
+    "Year": 2016,
+    "NumberofSuicideDeath": 667
+  },
+  {
+    "State": "Queensland",
+    "Year": 2016,
+    "NumberofSuicideDeath": 688
+  },
+  {
+    "State": "South Australia",
+    "Year": 2016,
+    "NumberofSuicideDeath": 221
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2016,
+    "NumberofSuicideDeath": 373
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2016,
+    "NumberofSuicideDeath": 93
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2016,
+    "NumberofSuicideDeath": 46
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2016,
+    "NumberofSuicideDeath": 28
+  },
+  {
+    "State": "New South Western Australiales",
+    "Year": 2017,
+    "NumberofSuicideDeath": 929
+  },
+  {
+    "State": "Victoria",
+    "Year": 2017,
+    "NumberofSuicideDeath": 712
+  },
+  {
+    "State": "Queensland",
+    "Year": 2017,
+    "NumberofSuicideDeath": 815
+  },
+  {
+    "State": "South Australia",
+    "Year": 2017,
+    "NumberofSuicideDeath": 226
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2017,
+    "NumberofSuicideDeath": 418
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2017,
+    "NumberofSuicideDeath": 79
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2017,
+    "NumberofSuicideDeath": 51
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2017,
+    "NumberofSuicideDeath": 59
+  },
+  {
+    "State": "New South Western Australiales",
+    "Year": 2018,
+    "NumberofSuicideDeath": 940
+  },
+  {
+    "State": "Victoria",
+    "Year": 2018,
+    "NumberofSuicideDeath": 691
+  },
+  {
+    "State": "Queensland",
+    "Year": 2018,
+    "NumberofSuicideDeath": 805
+  },
+  {
+    "State": "South Australia",
+    "Year": 2018,
+    "NumberofSuicideDeath": 209
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2018,
+    "NumberofSuicideDeath": 384
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2018,
+    "NumberofSuicideDeath": 78
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2018,
+    "NumberofSuicideDeath": 47
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2018,
+    "NumberofSuicideDeath": 50
+  },
+  {
+    "State": "New South Western Australiales",
+    "Year": 2019,
+    "NumberofSuicideDeath": 960
+  },
+  {
+    "State": "Victoria",
+    "Year": 2019,
+    "NumberofSuicideDeath": 727
+  },
+  {
+    "State": "Queensland",
+    "Year": 2019,
+    "NumberofSuicideDeath": 798
+  },
+  {
+    "State": "South Australia",
+    "Year": 2019,
+    "NumberofSuicideDeath": 249
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2019,
+    "NumberofSuicideDeath": 415
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2019,
+    "NumberofSuicideDeath": 106
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2019,
+    "NumberofSuicideDeath": 50
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2019,
+    "NumberofSuicideDeath": 53
+  },
+  {
+    "State": "New South Western Australiales",
+    "Year": 2020,
+    "NumberofSuicideDeath": 876
+  },
+  {
+    "State": "Victoria",
+    "Year": 2020,
+    "NumberofSuicideDeath": 694
+  },
+  {
+    "State": "Queensland",
+    "Year": 2020,
+    "NumberofSuicideDeath": 759
+  },
+  {
+    "State": "South Australia",
+    "Year": 2020,
+    "NumberofSuicideDeath": 234
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2020,
+    "NumberofSuicideDeath": 381
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2020,
+    "NumberofSuicideDeath": 87
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2020,
+    "NumberofSuicideDeath": 51
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2020,
+    "NumberofSuicideDeath": 57
+  },
+  {
+    "State": "New South Western Australiales",
+    "Year": 2021,
+    "NumberofSuicideDeath": 880
+  },
+  {
+    "State": "Victoria",
+    "Year": 2021,
+    "NumberofSuicideDeath": 675
+  },
+  {
+    "State": "Queensland",
+    "Year": 2021,
+    "NumberofSuicideDeath": 783
+  },
+  {
+    "State": "South Australia",
+    "Year": 2021,
+    "NumberofSuicideDeath": 226
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2021,
+    "NumberofSuicideDeath": 389
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2021,
+    "NumberofSuicideDeath": 80
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2021,
+    "NumberofSuicideDeath": 46
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2021,
+    "NumberofSuicideDeath": 65
+  }
+]

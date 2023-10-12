@@ -12,7 +12,7 @@
       {
         "transform": [
           {
-            "calculate": "'Data is not available in ' + datum.properties.NAME",
+            "calculate": "'Data is not available in ' + datum.properties.STE_NAME16",
             "as": "note"
           }
         ],
@@ -22,15 +22,16 @@
       {
         "transform": [
           {
-            "lookup": "properties.NAME",
+            "lookup": "properties.STE_NAME16",
             "from": {
               "data": {
-                "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_deaths_dataset1.csv"
+                "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_deaths_dataset1.json"
               },
               "key": "State",
-              "fields": ["NumberofSuicideDeath"]
+              "fields": ["Year","NumberofSuicideDeath"]
             }
           },
+          
           {
             "joinaggregate": [{"op": "sum", "field": "NumberofSuicideDeath", "as": "TotalSuicide"}]
           },
@@ -42,13 +43,13 @@
           },
           {
             "calculate": "datum.TotalSuicideGrouped/datum.TotalSuicide * 10000",
-            "as": "Confirmed per 10,000 population"
+            "as": "rate"
           }
         ],
         "mark": {"type": "geoshape", "stroke": "white"},
         "encoding": {
           "color": {
-            "field": "Confirmed per 10,000 population",
+            "field": "rate",
             "type": "quantitative",
             "scale": {
               "type": "threshold",
@@ -57,10 +58,10 @@
             }
           },
           "tooltip": [
-            {"field": "properties.NAME", "type": "nominal", "title": "State"},
-            {"field": "NumberofSuicideDeath", "type": "quantitative"},
+            {"field": "properties.STE_NAME16", "type": "nominal", "title": "State"},
+            {"field": "TotalSuicide", "type": "quantitative"},
             {
-              "field": "Confirmed per 10,000 population",
+              "field": "rate",
               "type": "quantitative",
               "format": ".2f"
             }
