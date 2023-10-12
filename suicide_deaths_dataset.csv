@@ -1,81 +1,81 @@
-﻿Year,State,NumberofSuicideDeaths
-2012,NSW,727
-2013,NSW,718
-2014,NSW,832
-2015,NSW,839
-2016,NSW,822
-2017,NSW,929
-2018,NSW,940
-2019,NSW,960
-2020,NSW,876
-2021,NSW,880
-2012,VIC,514
-2013,VIC,552
-2014,VIC,672
-2015,VIC,686
-2016,VIC,667
-2017,VIC,712
-2018,VIC,691
-2019,VIC,727
-2020,VIC,694
-2021,VIC,675
-2012,QLD,631
-2013,QLD,676
-2014,QLD,658
-2015,QLD,761
-2016,QLD,688
-2017,QLD,815
-2018,QLD,805
-2019,QLD,798
-2020,QLD,759
-2021,QLD,783
-2012,SA,197
-2013,SA,203
-2014,SA,244
-2015,SA,233
-2016,SA,221
-2017,SA,226
-2018,SA,209
-2019,SA,249
-2020,SA,234
-2021,SA,226
-2012,WA,367
-2013,WA,336
-2014,WA,367
-2015,WA,402
-2016,WA,373
-2017,WA,418
-2018,WA,384
-2019,WA,415
-2020,WA,381
-2021,WA,389
-2012,TAS,71
-2013,TAS,74
-2014,TAS,69
-2015,TAS,84
-2016,TAS,93
-2017,TAS,79
-2018,TAS,78
-2019,TAS,106
-2020,TAS,87
-2021,TAS,80
-2012,NT,48
-2013,NT,33
-2014,NT,56
-2015,NT,48
-2016,NT,46
-2017,NT,51
-2018,NT,47
-2019,NT,50
-2020,NT,51
-2021,NT,46
-2012,ACT,24
-2013,ACT,37
-2014,ACT,38
-2015,ACT,46
-2016,ACT,28
-2017,ACT,59
-2018,ACT,50
-2019,ACT,53
-2020,ACT,57
-2021,ACT,65
+﻿State,Year,NumberofSuicideDeath
+Australian Capital Territory,2012,24
+Australian Capital Territory,2013,37
+Australian Capital Territory,2014,38
+Australian Capital Territory,2015,46
+Australian Capital Territory,2016,28
+Australian Capital Territory,2017,59
+Australian Capital Territory,2018,50
+Australian Capital Territory,2019,53
+Australian Capital Territory,2020,57
+Australian Capital Territory,2021,65
+New South Western Australiales,2012,727
+New South Western Australiales,2013,718
+New South Western Australiales,2014,832
+New South Western Australiales,2015,839
+New South Western Australiales,2016,822
+New South Western Australiales,2017,929
+New South Western Australiales,2018,940
+New South Western Australiales,2019,960
+New South Western Australiales,2020,876
+New South Western Australiales,2021,880
+Northern Territory,2012,48
+Northern Territory,2013,33
+Northern Territory,2014,56
+Northern Territory,2015,48
+Northern Territory,2016,46
+Northern Territory,2017,51
+Northern Territory,2018,47
+Northern Territory,2019,50
+Northern Territory,2020,51
+Northern Territory,2021,46
+Queensland,2012,631
+Queensland,2013,676
+Queensland,2014,658
+Queensland,2015,761
+Queensland,2016,688
+Queensland,2017,815
+Queensland,2018,805
+Queensland,2019,798
+Queensland,2020,759
+Queensland,2021,783
+South Australia,2012,197
+South Australia,2013,203
+South Australia,2014,244
+South Australia,2015,233
+South Australia,2016,221
+South Australia,2017,226
+South Australia,2018,209
+South Australia,2019,249
+South Australia,2020,234
+South Australia,2021,226
+Tasmania,2012,71
+Tasmania,2013,74
+Tasmania,2014,69
+Tasmania,2015,84
+Tasmania,2016,93
+Tasmania,2017,79
+Tasmania,2018,78
+Tasmania,2019,106
+Tasmania,2020,87
+Tasmania,2021,80
+Victoria,2012,514
+Victoria,2013,552
+Victoria,2014,672
+Victoria,2015,686
+Victoria,2016,667
+Victoria,2017,712
+Victoria,2018,691
+Victoria,2019,727
+Victoria,2020,694
+Victoria,2021,675
+Western Australia,2012,367
+Western Australia,2013,336
+Western Australia,2014,367
+Western Australia,2015,402
+Western Australia,2016,373
+Western Australia,2017,418
+Western Australia,2018,384
+Western Australia,2019,415
+Western Australia,2020,381
+Western Australia,2021,389

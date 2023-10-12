@@ -25,24 +25,21 @@
             "lookup": "properties.STE_NAME16",
             "from": {
               "data": {
-                "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_deaths_dataset1.json"
+                "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_death_dataset.json"
               },
               "key": "State",
-              "fields": ["Year","NumberofSuicideDeath"]
+              "fields": ["State","Year","NumberofSuicideDeath"]
             }
           },
           
           {
-            "joinaggregate": [{"op": "sum", "field": "NumberofSuicideDeath", "as": "TotalSuicide"}]
-          },
-          {
             "joinaggregate": [
-              {"op": "sum", "field": "NumberofSuicideDeath", "as": "TotalSuicideGrouped"}
+              {"op": "sum", "field": "NumberofSuicideDeath", "as": "NumberofSuicideDeathGrouped"}
             ],
             "groupby": ["State"]
           },
           {
-            "calculate": "datum.TotalSuicideGrouped/datum.TotalSuicide * 10000",
+            "calculate": "datum.NumberofSuicideDeathGrouped",
             "as": "rate"
           }
         ],
@@ -59,7 +56,7 @@
           },
           "tooltip": [
             {"field": "properties.STE_NAME16", "type": "nominal", "title": "State"},
-            {"field": "TotalSuicide", "type": "quantitative"},
+            {"field": "NumberofSuicideDeathGrouped", "type": "quantitative"},
             {
               "field": "rate",
               "type": "quantitative",
