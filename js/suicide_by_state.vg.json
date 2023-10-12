@@ -53,6 +53,7 @@
             "as": "rate"
           }
         ],
+        
         "mark": {"type": "geoshape", "stroke": "white"},
         "encoding": {
           "color": {
@@ -64,6 +65,7 @@
               "range": ["#ff4f55", "#f0181f", "#cc161c", "#ab1318"]
             }
           },
+          
           "tooltip": [
             {"field": "properties.STE_NAME16", "type": "nominal", "title": "State"},
             {"field": "NumberofSuicideDeath", "type": "quantitative", "title":"Number of Suicide Death"},
@@ -77,6 +79,35 @@
         }
       },
       {
+        "data":{"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_deaths_dataset.csv"},
+        "transform": [
+          {
+            "lookup": "State",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/js/STE_2016_AUST.topojson",
+                "format": {"type": "topojson", "feature": "unnamed"}
+              },
+              "key": "properties.STE_NAME16",
+              "fields": ["properties","geometry", "type"]
+            }
+          },
+          {"filter": "datum.Year==Year_selection"},
+          {
+            "calculate": "datum.latitude-0.7",
+            "as": "position"
+          }
+        ],
+        
+        "mark":{"type": "text"},
+        
+        "encoding": {"longitude":{"field":"longitude", "type": "quantitative"},
+                     "latitude":{"field":"position", "type": "quantitative"},
+                    "text":{"field":"NumberofSuicideDeath", "type": "quantitative"}
+        }
+      },
+      
+      {
         "transform": [{
             "lookup": "properties.STE_NAME16",
             "from":{
@@ -89,7 +120,7 @@
         "field": "properties.STE_NAME16",
         "oneOf": ["Australian Capital Territory", "New South Wales","Northern Territory", "Queensland", "South Australia", "Tasmania", "Victoria", "Western Australia"]
       }}],
-        "mark":{"type": "text"},
+        "mark":{"type": "text", "dy":-4, "dx":5},
         "encoding": {"longitude":{"field":"longitude", "type": "quantitative"},
                      "latitude":{"field":"latitude", "type": "quantitative"},
                     "text":{"field":"properties.STE_NAME16", "type": "nominal"}
