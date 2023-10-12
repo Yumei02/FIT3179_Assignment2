@@ -60,16 +60,17 @@
             "type": "quantitative",
             "scale": {
               "type": "threshold",
-              "domain": [1, 10, 100],
-              "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]
+              "domain": [1, 2, 3, 4],
+              "range": ["#ff4f55", "#f0181f", "#cc161c", "#ab1318"]
             }
           },
           "tooltip": [
             {"field": "properties.STE_NAME16", "type": "nominal", "title": "State"},
-            {"field": "NumberofSuicideDeath", "type": "quantitative"},
+            {"field": "NumberofSuicideDeath", "type": "quantitative", "title":"Number of Suicide Death"},
             {
               "field": "rate",
               "type": "quantitative",
+              "title":"Suicide Rate",
               "format": ".2f"
             }
           ]

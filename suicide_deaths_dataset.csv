@@ -1,81 +1,81 @@
-﻿State,Year,NumberofSuicideDeath
-Australian Capital Territory,2012,24
-Australian Capital Territory,2013,37
-Australian Capital Territory,2014,38
-Australian Capital Territory,2015,46
-Australian Capital Territory,2016,28
-Australian Capital Territory,2017,59
-Australian Capital Territory,2018,50
-Australian Capital Territory,2019,53
-Australian Capital Territory,2020,57
-Australian Capital Territory,2021,65
-New South Wales,2012,727
-New South Wales,2013,718
-New South Wales,2014,832
-New South Wales,2015,839
-New South Wales,2016,822
-New South Wales,2017,929
-New South Wales,2018,940
-New South Wales,2019,960
-New South Wales,2020,876
-New South Wales,2021,880
-Northern Territory,2012,48
-Northern Territory,2013,33
-Northern Territory,2014,56
-Northern Territory,2015,48
-Northern Territory,2016,46
-Northern Territory,2017,51
-Northern Territory,2018,47
-Northern Territory,2019,50
-Northern Territory,2020,51
-Northern Territory,2021,46
-Queensland,2012,631
-Queensland,2013,676
-Queensland,2014,658
-Queensland,2015,761
-Queensland,2016,688
-Queensland,2017,815
-Queensland,2018,805
-Queensland,2019,798
-Queensland,2020,759
-Queensland,2021,783
-South Australia,2012,197
-South Australia,2013,203
-South Australia,2014,244
-South Australia,2015,233
-South Australia,2016,221
-South Australia,2017,226
-South Australia,2018,209
-South Australia,2019,249
-South Australia,2020,234
-South Australia,2021,226
-Tasmania,2012,71
-Tasmania,2013,74
-Tasmania,2014,69
-Tasmania,2015,84
-Tasmania,2016,93
-Tasmania,2017,79
-Tasmania,2018,78
-Tasmania,2019,106
-Tasmania,2020,87
-Tasmania,2021,80
-Victoria,2012,514
-Victoria,2013,552
-Victoria,2014,672
-Victoria,2015,686
-Victoria,2016,667
-Victoria,2017,712
-Victoria,2018,691
-Victoria,2019,727
-Victoria,2020,694
-Victoria,2021,675
-Western Australia,2012,367
-Western Australia,2013,336
-Western Australia,2014,367
-Western Australia,2015,402
-Western Australia,2016,373
-Western Australia,2017,418
-Western Australia,2018,384
-Western Australia,2019,415
-Western Australia,2020,381
-Western Australia,2021,389
+﻿State,Year,NumberofSuicideDeath,latitude,longitude
+Australian Capital Territory,2012,24,-35.522461,149.081696
+Australian Capital Territory,2013,37,-35.522461,149.081696
+Australian Capital Territory,2014,38,-35.522461,149.081696
+Australian Capital Territory,2015,46,-35.522461,149.081696
+Australian Capital Territory,2016,28,-35.522461,149.081696
+Australian Capital Territory,2017,59,-35.522461,149.081696
+Australian Capital Territory,2018,50,-35.522461,149.081696
+Australian Capital Territory,2019,53,-35.522461,149.081696
+Australian Capital Territory,2020,57,-35.522461,149.081696
+Australian Capital Territory,2021,65,-35.522461,149.081696
+New South Wales,2012,727,-31.253218,146.921097
+New South Wales,2013,718,-31.253218,146.921097
+New South Wales,2014,832,-31.253218,146.921097
+New South Wales,2015,839,-31.253218,146.921097
+New South Wales,2016,822,-31.253218,146.921097
+New South Wales,2017,929,-31.253218,146.921097
+New South Wales,2018,940,-31.253218,146.921097
+New South Wales,2019,960,-31.253218,146.921097
+New South Wales,2020,876,-31.253218,146.921097
+New South Wales,2021,880,-31.253218,146.921097
+Northern Territory,2012,48,-19.491411,-19.491411
+Northern Territory,2013,33,-19.491411,-19.491411
+Northern Territory,2014,56,-19.491411,-19.491411
+Northern Territory,2015,48,-19.491411,-19.491411
+Northern Territory,2016,46,-19.491411,-19.491411
+Northern Territory,2017,51,-19.491411,-19.491411
+Northern Territory,2018,47,-19.491411,-19.491411
+Northern Territory,2019,50,-19.491411,-19.491411
+Northern Territory,2020,51,-19.491411,-19.491411
+Northern Territory,2021,46,-19.491411,-19.491411
+Queensland,2012,631,-20.917574,142.702789
+Queensland,2013,676,-20.917574,142.702789
+Queensland,2014,658,-20.917574,142.702789
+Queensland,2015,761,-20.917574,142.702789
+Queensland,2016,688,-20.917574,142.702789
+Queensland,2017,815,-20.917574,142.702789
+Queensland,2018,805,-20.917574,142.702789
+Queensland,2019,798,-20.917574,142.702789
+Queensland,2020,759,-20.917574,142.702789
+Queensland,2021,783,-20.917574,142.702789
+South Australia,2012,197,-32.028801,135.001694
+South Australia,2013,203,-32.028801,135.001694
+South Australia,2014,244,-32.028801,135.001694
+South Australia,2015,233,-32.028801,135.001694
+South Australia,2016,221,-32.028801,135.001694
+South Australia,2017,226,-32.028801,135.001694
+South Australia,2018,209,-32.028801,135.001694
+South Australia,2019,249,-32.028801,135.001694
+South Australia,2020,234,-32.028801,135.001694
+South Australia,2021,226,-32.028801,135.001694
+Tasmania,2012,71,-42.0117,146.3536
+Tasmania,2013,74,-42.0117,146.3536
+Tasmania,2014,69,-42.0117,146.3536
+Tasmania,2015,84,-42.0117,146.3536
+Tasmania,2016,93,-42.0117,146.3536
+Tasmania,2017,79,-42.0117,146.3536
+Tasmania,2018,78,-42.0117,146.3536
+Tasmania,2019,106,-42.0117,146.3536
+Tasmania,2020,87,-42.0117,146.3536
+Tasmania,2021,80,-42.0117,146.3536
+Victoria,2012,514,-36.5115,144.1652
+Victoria,2013,552,-36.5115,144.1652
+Victoria,2014,672,-36.5115,144.1652
+Victoria,2015,686,-36.5115,144.1652
+Victoria,2016,667,-36.5115,144.1652
+Victoria,2017,712,-36.5115,144.1652
+Victoria,2018,691,-36.5115,144.1652
+Victoria,2019,727,-36.5115,144.1652
+Victoria,2020,694,-36.5115,144.1652
+Victoria,2021,675,-36.5115,144.1652
+Western Australia,2012,367,-25.1941,122.1754
+Western Australia,2013,336,-25.1941,122.1754
+Western Australia,2014,367,-25.1941,122.1754
+Western Australia,2015,402,-25.1941,122.1754
+Western Australia,2016,373,-25.1941,122.1754
+Western Australia,2017,418,-25.1941,122.1754
+Western Australia,2018,384,-25.1941,122.1754
+Western Australia,2019,415,-25.1941,122.1754
+Western Australia,2020,381,-25.1941,122.1754
+Western Australia,2021,389,-25.1941,122.1754
