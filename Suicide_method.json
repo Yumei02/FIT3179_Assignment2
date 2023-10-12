@@ -1,0 +1,602 @@
+[
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2012,
+   "Suicide_Number": 222,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2013,
+   "Suicide_Number": 192,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2014,
+   "Suicide_Number": 245,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2015,
+   "Suicide_Number": 274,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2016,
+   "Suicide_Number": 239,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2017,
+   "Suicide_Number": 262,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2018,
+   "Suicide_Number": 253,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2019,
+   "Suicide_Number": 262,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2020,
+   "Suicide_Number": 245,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2021,
+   "Suicide_Number": 257,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2012,
+   "Suicide_Number": 159,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2013,
+   "Suicide_Number": 151,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2014,
+   "Suicide_Number": 152,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2015,
+   "Suicide_Number": 153,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2016,
+   "Suicide_Number": 129,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2017,
+   "Suicide_Number": 145,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2018,
+   "Suicide_Number": 125,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2019,
+   "Suicide_Number": 114,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2020,
+   "Suicide_Number": 109,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2021,
+   "Suicide_Number": 92,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2012,
+   "Suicide_Number": 170,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2013,
+   "Suicide_Number": 162,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2014,
+   "Suicide_Number": 179,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2015,
+   "Suicide_Number": 182,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2016,
+   "Suicide_Number": 177,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2017,
+   "Suicide_Number": 162,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2018,
+   "Suicide_Number": 176,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2019,
+   "Suicide_Number": 178,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2020,
+   "Suicide_Number": 159,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2021,
+   "Suicide_Number": 159,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2012,
+   "Suicide_Number": 1084,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2013,
+   "Suicide_Number": 1124,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2014,
+   "Suicide_Number": 1291,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2015,
+   "Suicide_Number": 1353,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2016,
+   "Suicide_Number": 1263,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2017,
+   "Suicide_Number": 1496,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2018,
+   "Suicide_Number": 1502,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2019,
+   "Suicide_Number": 1565,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2020,
+   "Suicide_Number": 1445,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2021,
+   "Suicide_Number": 1497,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2012,
+   "Suicide_Number": 295,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2013,
+   "Suicide_Number": 330,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2014,
+   "Suicide_Number": 353,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2015,
+   "Suicide_Number": 375,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2016,
+   "Suicide_Number": 384,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2017,
+   "Suicide_Number": 389,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2018,
+   "Suicide_Number": 382,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2019,
+   "Suicide_Number": 417,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2020,
+   "Suicide_Number": 426,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2021,
+   "Suicide_Number": 353,
+   "Sex": "Males"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2012,
+   "Suicide_Number": 184,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2013,
+   "Suicide_Number": 219,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2014,
+   "Suicide_Number": 222,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2015,
+   "Suicide_Number": 233,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2016,
+   "Suicide_Number": 221,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2017,
+   "Suicide_Number": 259,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2018,
+   "Suicide_Number": 243,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2019,
+   "Suicide_Number": 254,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2020,
+   "Suicide_Number": 216,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Poisons (excl. gas)",
+   "Year": 2021,
+   "Suicide_Number": 225,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2012,
+   "Suicide_Number": 36,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2013,
+   "Suicide_Number": 25,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2014,
+   "Suicide_Number": 26,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2015,
+   "Suicide_Number": 33,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2016,
+   "Suicide_Number": 26,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2017,
+   "Suicide_Number": 15,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2018,
+   "Suicide_Number": 23,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2019,
+   "Suicide_Number": 21,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2020,
+   "Suicide_Number": 14,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Gas",
+   "Year": 2021,
+   "Suicide_Number": 28,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2012,
+   "Suicide_Number": 8,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2013,
+   "Suicide_Number": 7,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2014,
+   "Suicide_Number": 5,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2015,
+   "Suicide_Number": 3,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2016,
+   "Suicide_Number": 12,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2017,
+   "Suicide_Number": 8,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2018,
+   "Suicide_Number": 4,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2019,
+   "Suicide_Number": 8,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2020,
+   "Suicide_Number": 8,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Firearms",
+   "Year": 2021,
+   "Suicide_Number": 11,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2012,
+   "Suicide_Number": 301,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2013,
+   "Suicide_Number": 307,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2014,
+   "Suicide_Number": 350,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2015,
+   "Suicide_Number": 364,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2016,
+   "Suicide_Number": 349,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2017,
+   "Suicide_Number": 386,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2018,
+   "Suicide_Number": 367,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2019,
+   "Suicide_Number": 412,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2020,
+   "Suicide_Number": 391,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Hanging",
+   "Year": 2021,
+   "Suicide_Number": 412,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2012,
+   "Suicide_Number": 121,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2013,
+   "Suicide_Number": 113,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2014,
+   "Suicide_Number": 113,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2015,
+   "Suicide_Number": 131,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2016,
+   "Suicide_Number": 139,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2017,
+   "Suicide_Number": 168,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2018,
+   "Suicide_Number": 130,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2019,
+   "Suicide_Number": 127,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2020,
+   "Suicide_Number": 126,
+   "Sex": "Females"
+ },
+ {
+   "Mechanism": "Other mechanisms",
+   "Year": 2021,
+   "Suicide_Number": 110,
+   "Sex": "Females"
+ }
+]
