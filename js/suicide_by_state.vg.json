@@ -84,12 +84,16 @@
                 "key": "State",
                 "fields": ["latitude", "longitude"]
             }
-        }],
+        },
+    { "filter": {
+        "field": "properties.STE_NAME16",
+        "oneOf": ["Australian Capital Territory", "New South Wales","Northern Territory", "Queensland", "South Australia", "Tasmania", "Victoria", "Western Australia"]
+      }}],
         "mark":{"type": "text"},
         "encoding": {"longitude":{"field":"longitude", "type": "quantitative"},
                      "latitude":{"field":"latitude", "type": "quantitative"},
-                    "text":{"field":"properties.STE_NAME16", "type": "nominal"}}
+                    "text":{"field":"properties.STE_NAME16", "type": "nominal"}
+        }
       }
-    ],
-    "config": {}
+    ]
   }
