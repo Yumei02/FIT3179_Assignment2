@@ -75,6 +75,20 @@
             }
           ]
         }
+      },
+      {
+        "transform": [{
+            "lookup": "properties.STE_NAME16",
+            "from":{
+                "data":{"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_deaths_dataset.csv"},
+                "key": "State",
+                "fields": ["latitude", "longitude"]
+            }
+        }],
+        "mark":{"type": "text"},
+        "encoding": {"longitude":{"field":"longitude", "type": "quantitative"},
+                     "latitude":{"field":"latitude", "type": "quantitative"},
+                    "text":{"field":"properties.STE_NAME16", "type": "nominal"}}
       }
     ],
     "config": {}
