@@ -8,6 +8,19 @@
       "format": {"type": "topojson", "feature": "unnamed"}
     },
     "projection": {"type": "equalEarth"},
+    "params": [
+        {
+          "name": "Year_selection",
+          "value": 2012,
+          "bind": {
+            "input": "range",
+            "min": 2012,
+            "max": 2021,
+            "step": 1,
+            "name": "Year:  "
+          }
+        }
+      ],
     "layer": [
       {
         "transform": [
@@ -19,27 +32,24 @@
         "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
         "encoding": {"tooltip": {"field": "note"}}
       },
+      
       {
+        "data":{"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_deaths_dataset.csv"},
         "transform": [
           {
-            "lookup": "properties.STE_NAME16",
+            "lookup": "State",
             "from": {
               "data": {
-                "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_death_dataset.json"
+                "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/js/STE_2016_AUST.topojson",
+                "format": {"type": "topojson", "feature": "unnamed"}
               },
-              "key": "State",
-              "fields": ["State","Year","NumberofSuicideDeath"]
+              "key": "properties.STE_NAME16",
+              "fields": ["properties","geometry", "type"]
             }
           },
-          
+          {"filter": "datum.Year==Year_selection"},
           {
-            "joinaggregate": [
-              {"op": "sum", "field": "NumberofSuicideDeath", "as": "NumberofSuicideDeathGrouped"}
-            ],
-            "groupby": ["State"]
-          },
-          {
-            "calculate": "datum.NumberofSuicideDeathGrouped",
+            "calculate": "datum.NumberofSuicideDeath/30315*100",
             "as": "rate"
           }
         ],
@@ -56,7 +66,7 @@
           },
           "tooltip": [
             {"field": "properties.STE_NAME16", "type": "nominal", "title": "State"},
-            {"field": "NumberofSuicideDeathGrouped", "type": "quantitative"},
+            {"field": "NumberofSuicideDeath", "type": "quantitative"},
             {
               "field": "rate",
               "type": "quantitative",
