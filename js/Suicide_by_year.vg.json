@@ -1,27 +1,46 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "name": "trellis_barley",
-    "data": {"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_deaths_dataset.csv"},
-    "mark": "point",
-    "height": {"step": 12},
+    "data": {"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_deaths_dataset1.json"},
+    "transform": [
+      {
+        "window": [{"op": "row_number", "as": "id"}],
+        "sort": [{"field": "Year", "order": "descending"}],
+        "groupby": ["Year"]
+      },
+      {"calculate": "ceil (datum.id / 15)", "as": "row"},
+      {"calculate": "datum.id - datum.row * 15", "as": "col"},
+      {
+        "joinaggregate": [{"op": "sum", "field": "NumberofSuicideDeath", "as": "TotalOrigin"}]
+      },
+      {
+        "joinaggregate": [
+          {"op": "sum", "field": "NumberofSuicideDeath", "as": "TotalOriginGrouped"}
+        ],
+        "groupby": ["Year"]
+      },
+      {
+        "calculate": "round(datum.TotalOriginGrouped/datum.TotalOrigin * 100)",
+        "as": "PercentOfTotal"
+      }
+    ],
+    "mark": {
+      "type": "circle",
+      "filled": true,
+      "tooltip": true,
+      "stroke": "black",
+      "strokeWidth": 0.7
+    },
     "encoding": {
-    "facet": {
-    "field": "site",
-    "type": "ordinal",
-    "columns": 2,
-    "sort": {"op": "median", "field": "yield"}
-    },
-    "x": {
-      "aggregate": "median",
-      "field": "yield",
-      "type": "quantitative",
-      "scale": {"zero": false}
-    },
-    "y": {
-      "field": "variety",
-      "type": "ordinal",
-      "sort": "-x"
-    },
-    "color": {"field": "year", "type": "nominal"}
+      "x": {"field": "col", "type": "ordinal", "axis": null},
+      "y": {"field": "row", "type": "ordinal", "axis": null, "sort": "-y"},
+      "color": {
+        "field": "Year",
+        "type": "nominal",
+        "scale": {"scheme": "set1"},
+        "legend": null
+      },
+      "column": {"field": "Year", "header": {"labelOrient": "bottom"}},
+      "size": {"value": 241},
+      "tooltip": [{"field": "Year", "type": "nominal"}]
+    }
   }
-}
