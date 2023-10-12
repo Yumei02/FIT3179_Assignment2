@@ -4,7 +4,7 @@
     "width": 800,
     "height": 500,
     "data": {
-      "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/js/ne_110m_admin_0_countries.topojson",
+      "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/js/STE_2016_AUST.topojson",
       "format": {"type": "topojson", "feature": "unnamed"}
     },
     "projection": {"type": "equalEarth"},
