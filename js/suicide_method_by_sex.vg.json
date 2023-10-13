@@ -23,7 +23,7 @@
       {"name": "radius", "update": "width / 2"}
     ],
   
-    "data": [{"name": "methods", "values": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_method.json"},
+    "data": [{"name": "methods", "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_method.json"},
             {"name": "keys", "source":"methods", 
             "transform": [
             {"type": "aggregate", "groupby":["Mechanism"]}]}

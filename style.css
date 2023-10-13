@@ -1,0 +1,15 @@
+#main, text{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#first{
+    padding-top: 50px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+

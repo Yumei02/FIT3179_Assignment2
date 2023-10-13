@@ -1,13 +1,15 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "The Suicide of Death in Australia",
-    "width": 800,
+    "width": "container",
     "height": 500,
     "data": {
+      "name": "aus_state",
       "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/js/STE_2016_AUST.topojson",
       "format": {"type": "topojson", "feature": "unnamed"}
     },
-    "projection": {"type": "equalEarth"},
+    "projection": {"type": "equalEarth"
+  },                  
     "params": [
         {
           "name": "Year_selection",
@@ -126,5 +128,10 @@
                     "text":{"field":"properties.STE_NAME16", "type": "nominal"}
         }
       }
-    ]
+    ],
+    "config": {
+      "view": {
+         "stroke":"transparent"
+      }
+    }
   }
