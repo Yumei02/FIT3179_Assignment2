@@ -1,14 +1,14 @@
 ﻿Mechanism,Year,Suicide_Rate,Sex
-Poisons (excl. gas),2012,0.779844961,Males
-Gas,2012,0.779844961,Males
-Firearms,2012,0.779844961,Males
-Hanging,2012,0.779844961,Males
-Other mechanisms,2012,0.779844961,Males
-Poisons (excl. gas),2012,0.779844961,Females
-Gas,2012,0.779844961,Females
-Firearms,2012,0.779844961,Females
-Hanging,2012,0.779844961,Females
-Other mechanisms,2012,0.779844961,Females
+Poisons (excl. gas),2012,0.086046512,Males
+Gas,2012,0.061627907,Males
+Firearms,2012,0.065891473,Males
+Hanging,2012,0.420155039,Males
+Other mechanisms,2012,0.114341085,Males
+Poisons (excl. gas),2012,0.071317829,Females
+Gas,2012,0.013953488,Females
+Firearms,2012,0.003100775,Females
+Hanging,2012,0.116666667,Females
+Other mechanisms,2012,0.046899225,Females
 Poisons (excl. gas),2013,0.073003802,Males
 Gas,2013,0.057414449,Males
 Firearms,2013,0.061596958,Males
