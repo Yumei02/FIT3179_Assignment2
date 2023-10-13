@@ -1,0 +1,101 @@
+﻿Mechanism,Sex,Year,Suicide_Number
+Poisons (excl. gas),Males,2012A,222
+Poisons (excl. gas),Males,2013,192
+Poisons (excl. gas),Males,2014A,245
+Poisons (excl. gas),Males,2015A,274
+Poisons (excl. gas),Males,2016A,239
+Poisons (excl. gas),Males,2017A,262
+Poisons (excl. gas),Males,2018A,253
+Poisons (excl. gas),Males,2019A,262
+Poisons (excl. gas),Males,2020A,245
+Poisons (excl. gas),Males,2021A,257
+Gas,Males,2012A,159
+Gas,Males,2013,151
+Gas,Males,2014A,152
+Gas,Males,2015A,153
+Gas,Males,2016A,129
+Gas,Males,2017A,145
+Gas,Males,2018A,125
+Gas,Males,2019A,114
+Gas,Males,2020A,109
+Gas,Males,2021A,92
+Firearms,Males,2012A,170
+Firearms,Males,2013,162
+Firearms,Males,2014A,179
+Firearms,Males,2015A,182
+Firearms,Males,2016A,177
+Firearms,Males,2017A,162
+Firearms,Males,2018A,176
+Firearms,Males,2019A,178
+Firearms,Males,2020A,159
+Firearms,Males,2021A,159
+Hanging,Males,2012A,1084
+Hanging,Males,2013,1124
+Hanging,Males,2014A,1291
+Hanging,Males,2015A,1353
+Hanging,Males,2016A,1263
+Hanging,Males,2017A,1496
+Hanging,Males,2018A,1502
+Hanging,Males,2019A,1565
+Hanging,Males,2020A,1445
+Hanging,Males,2021A,1497
+Other mechanisms,Males,2012A,295
+Other mechanisms,Males,2013,330
+Other mechanisms,Males,2014A,353
+Other mechanisms,Males,2015A,375
+Other mechanisms,Males,2016A,384
+Other mechanisms,Males,2017A,389
+Other mechanisms,Males,2018A,382
+Other mechanisms,Males,2019A,417
+Other mechanisms,Males,2020A,426
+Other mechanisms,Males,2021A,353
+Poisons (excl. gas),Females,2012A,184
+Poisons (excl. gas),Females,2013,219
+Poisons (excl. gas),Females,2014A,222
+Poisons (excl. gas),Females,2015A,233
+Poisons (excl. gas),Females,2016A,221
+Poisons (excl. gas),Females,2017A,259
+Poisons (excl. gas),Females,2018A,243
+Poisons (excl. gas),Females,2019A,254
+Poisons (excl. gas),Females,2020A,216
+Poisons (excl. gas),Females,2021A,225
+Gas,Females,2012A,36
+Gas,Females,2013,25
+Gas,Females,2014A,26
+Gas,Females,2015A,33
+Gas,Females,2016A,26
+Gas,Females,2017A,15
+Gas,Females,2018A,23
+Gas,Females,2019A,21
+Gas,Females,2020A,14
+Gas,Females,2021A,28
+Firearms,Females,2012A,8
+Firearms,Females,2013,7
+Firearms,Females,2014A,5
+Firearms,Females,2015A,3
+Firearms,Females,2016A,12
+Firearms,Females,2017A,8
+Firearms,Females,2018A,4
+Firearms,Females,2019A,8
+Firearms,Females,2020A,8
+Firearms,Females,2021A,11
+Hanging,Females,2012A,301
+Hanging,Females,2013,307
+Hanging,Females,2014A,350
+Hanging,Females,2015A,364
+Hanging,Females,2016A,349
+Hanging,Females,2017A,386
+Hanging,Females,2018A,367
+Hanging,Females,2019A,412
+Hanging,Females,2020A,391
+Hanging,Females,2021A,412
+Other mechanisms,Females,2012A,121
+Other mechanisms,Females,2013,113
+Other mechanisms,Females,2014A,113
+Other mechanisms,Females,2015A,131
+Other mechanisms,Females,2016A,139
+Other mechanisms,Females,2017A,168
+Other mechanisms,Females,2018A,130
+Other mechanisms,Females,2019A,127
+Other mechanisms,Females,2020A,126
+Other mechanisms,Females,2021A,110
