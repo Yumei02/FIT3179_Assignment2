@@ -3,43 +3,38 @@
     "description": "A radar chart example, showing multiple dimensions in a radial layout.",
     "width": 400,
     "height": 400,
-    "params": [
-        {
+    "padding": 40,
+    "autosize": {"type": "none"},
+  
+    "signals": [
+      {"name": "radius", "update": "width / 2"},
+      {
         "name": "Year_selection",
-        "value": 2012,
+        "value": "Males",
         "bind": {
-        "input": "range",
-        "min": 2012,
-        "max": 2021,
-        "step": 1,
+        "input": "select",
+        "options": ["Males", "Females"], 
+        "labels": ["1: Males", "2. Females"],
         "name": "Year: "
         }
         }
-        ],
-    "padding": 40,
-    "autosize": {"type": "none", "contains": "padding"},
-  
-    "signals": [
-      {"name": "radius", "update": "width / 2"}
-    ],
-  
-    "data": [{"name": "methods", "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_method.json"},
-            {"name": "keys", "source":"methods", 
-            "transform": [
-            {"type": "aggregate", "groupby":["Mechanism"]}]}
-        ],
         
+    ],
     
-    "layer":[ 
-    {"data": {"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_deaths_dataset1.json"},
-    "transform":[{"filter": "datum.Year==Year_selection"}]},   
-    {"scales": [
+    "data": [{"name": "table", "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_method_rate", "format":{"type":"csv","delimiter": ","},
+             
+            "transform": [
+              
+              {"type": "filter", "expr": "Year_selection == null || datum.Sex==Year_selection"}]},
+
+            {"name":"keys","source": "table", "transform":[{"type": "aggregate", "groupby":["Mechanism"]}]}],   
+    "scales": [
       {
         "name": "angular",
         "type": "point",
         "range": {"signal": "[-PI, PI]"},
         "padding": 0.5,
-        "domain": {"data": "methods", "field": "Mechanism"}
+        "domain": {"data": "table", "field": "Mechanism"}
       },
       {
         "name": "radial",
@@ -47,31 +42,31 @@
         "range": {"signal": "[0, radius]"},
         "zero": true,
         "nice": false,
-        "domain": {"data": "methods", "field": "Suicide_Number"},
+        "domain": {"data": "table", "field": "Suicide_Rate"},
         "domainMin": 0
       },
       {
         "name": "color",
         "type": "ordinal",
-        "domain": {"data": "methods", "field": "Sex"},
+        "domain": {"data": "table", "field": "Sex"},
         "range": {"scheme": "category10"}
       }
-    ]},
+    ],
   
-    {"encode": {
+    "encode": {
       "enter": {
         "x": {"signal": "radius"},
         "y": {"signal": "radius"}
       }
-    }},
+    },
   
-    {"marks": [
+    "marks": [
       {
         "type": "group",
         "name": "categories",
         "zindex": 1,
         "from": {
-          "facet": {"data": "methods", "name": "facet", "groupby": ["Sex"]}
+          "facet": {"data": "table", "name": "facet", "groupby": ["Sex"]}
         },
         "marks": [
           {
@@ -80,9 +75,12 @@
             "from": {"data": "facet"},
             "encode": {
               "enter": {
+                "tooltip": {
+                  "signal": "{'Sex': datum.Sex,'Mechanism': datum.Mechanism, 'Suicide_Rate': datum.Suicide_Rate}"
+                },
                 "interpolate": {"value": "linear-closed"},
-                "x": {"signal": "scale('radial', datum.Suicide_Number) * cos(scale('angular', datum.Mechanism))"},
-                "y": {"signal": "scale('radial', datum.Suicide_Number) * sin(scale('angular', datum.Mechanism))"},
+                "x": {"signal": "scale('radial', datum.Suicide_Rate) * cos(scale('angular', datum.Mechanism))"},
+                "y": {"signal": "scale('radial', datum.Suicide_Rate) * sin(scale('angular', datum.Mechanism))"},
                 "stroke": {"scale": "color", "field": "Sex"},
                 "strokeWidth": {"value": 1},
                 "fill": {"scale": "color", "field": "Sex"},
@@ -96,9 +94,9 @@
             "from": {"data": "category-line"},
             "encode": {
               "enter": {
-                "x": {"signal": "datum.x"},
-                "y": {"signal": "datum.y"},
-                "text": {"signal": "datum.datum.Suicide_Number"},
+                "x": {"signal": "datum.x+ (datum.x - 20 < 0 ? 10 : -10)"},
+                "y": {"signal": "datum.y+ (datum.y - 20 < 0 ? 15 : -15)"},
+                "text": {"signal": "format(datum.datum.Suicide_Rate,'.3f')"},
                 "align": {"value": "center"},
                 "baseline": {"value": "middle"},
                 "fill": {"value": "black"}
@@ -106,6 +104,42 @@
             }
           }
         ]
+      },
+      {
+        "type": "text",
+        "name": "key-label",
+        "from": {"data": "keys"},
+        "zindex": 1,
+        "encode": {
+          "enter": {
+            "x": {"signal": "(radius + 1) * cos(scale('angular', datum.Mechanism))"},
+            "y": {"signal": "(radius + 1) * sin(scale('angular', datum.Mechanism))"},
+            "text": {"field": "Mechanism"},
+            "align": [
+              {
+                "test": "abs(scale('angular', datum.Mechanism)) > PI / 2",
+                "value": "right",
+                "padding":20
+              },
+              {
+                "value": "left"
+              }
+            ],
+            "baseline": [
+              {
+                "test": "scale('angular', datum.Mechanism) > 0", "value": "bottom"
+              },
+              {
+                "test": "scale('angular', datum.Mechanism) == 0", "value": "top"
+              },
+              {
+                "value": "top"
+              }
+            ],
+            "fill": {"value": "black"},
+            "fontWeight": {"value": "bold"}
+          }
+        }
       },
       {
         "type": "rule",
@@ -124,41 +158,6 @@
         }
       },
       {
-        "type": "text",
-        "name": "key-label",
-        "from": {"data": "keys"},
-        "zindex": 1,
-        "encode": {
-          "enter": {
-            "x": {"signal": "(radius + 5) * cos(scale('angular', datum.Mechanism))"},
-            "y": {"signal": "(radius + 5) * sin(scale('angular', datum.Mechanism))"},
-            "text": {"field": "Mechanism"},
-            "align": [
-              {
-                "test": "abs(scale('angular', datum.Mechanism)) > PI / 2",
-                "value": "right"
-              },
-              {
-                "value": "left"
-              }
-            ],
-            "baseline": [
-              {
-                "test": "scale('angular', datum.Mechanism) > 0", "value": "top"
-              },
-              {
-                "test": "scale('angular', datum.Mechanism) == 0", "value": "middle"
-              },
-              {
-                "value": "bottom"
-              }
-            ],
-            "fill": {"value": "black"},
-            "fontWeight": {"value": "bold"}
-          }
-        }
-      },
-      {
         "type": "line",
         "name": "outer-line",
         "from": {"data": "radial-grid"},
@@ -172,6 +171,6 @@
           }
         }
       }
-    ]}
-]
+    ]
+
   }
