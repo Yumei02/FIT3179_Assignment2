@@ -1,0 +1,101 @@
+﻿Mechanism,Year,Suicide_Rate,Sex
+Poisons (excl. gas),2012,0.779844961,Males
+Gas,2012,0.779844961,Males
+Firearms,2012,0.779844961,Males
+Hanging,2012,0.779844961,Males
+Other mechanisms,2012,0.779844961,Males
+Poisons (excl. gas),2012,0.779844961,Females
+Gas,2012,0.779844961,Females
+Firearms,2012,0.779844961,Females
+Hanging,2012,0.779844961,Females
+Other mechanisms,2012,0.779844961,Females
+Poisons (excl. gas),2013,0.073003802,Males
+Gas,2013,0.057414449,Males
+Firearms,2013,0.061596958,Males
+Hanging,2013,0.427376426,Males
+Other mechanisms,2013,0.125475285,Males
+Poisons (excl. gas),2013,0.083269962,Females
+Gas,2013,0.009505703,Females
+Firearms,2013,0.002661597,Females
+Hanging,2013,0.116730038,Females
+Other mechanisms,2013,0.042965779,Females
+Poisons (excl. gas),2014,0.083446866,Males
+Gas,2014,0.051771117,Males
+Firearms,2014,0.060967302,Males
+Hanging,2014,0.439713896,Males
+Other mechanisms,2014,0.120231608,Males
+Poisons (excl. gas),2014,0.075613079,Females
+Gas,2014,0.008855586,Females
+Firearms,2014,0.001702997,Females
+Hanging,2014,0.119209809,Females
+Other mechanisms,2014,0.038487738,Females
+Poisons (excl. gas),2015,0.088358594,Males
+Gas,2015,0.049338923,Males
+Firearms,2015,0.058690745,Males
+Hanging,2015,0.436310867,Males
+Other mechanisms,2015,0.120928733,Males
+Poisons (excl. gas),2015,0.075137053,Females
+Gas,2015,0.010641728,Females
+Firearms,2015,0.00096743,Females
+Hanging,2015,0.11738149,Females
+Other mechanisms,2015,0.042244437,Females
+Poisons (excl. gas),2016,0.081320177,Males
+Gas,2016,0.04389248,Males
+Firearms,2016,0.060224566,Males
+Hanging,2016,0.429738006,Males
+Other mechanisms,2016,0.130656686,Males
+Poisons (excl. gas),2016,0.075195645,Females
+Gas,2016,0.008846546,Females
+Firearms,2016,0.004083021,Females
+Hanging,2016,0.118747873,Females
+Other mechanisms,2016,0.047294998,Females
+Poisons (excl. gas),2017,0.079635258,Males
+Gas,2017,0.044072948,Males
+Firearms,2017,0.049240122,Males
+Hanging,2017,0.454711246,Males
+Other mechanisms,2017,0.118237082,Males
+Poisons (excl. gas),2017,0.078723404,Females
+Gas,2017,0.004559271,Females
+Firearms,2017,0.002431611,Females
+Hanging,2017,0.117325228,Females
+Other mechanisms,2017,0.05106383,Females
+Poisons (excl. gas),2018,0.078939158,Males
+Gas,2018,0.03900156,Males
+Firearms,2018,0.054914197,Males
+Hanging,2018,0.468642746,Males
+Other mechanisms,2018,0.119188768,Males
+Poisons (excl. gas),2018,0.075819033,Females
+Gas,2018,0.007176287,Females
+Firearms,2018,0.00124805,Females
+Hanging,2018,0.11450858,Females
+Other mechanisms,2018,0.040561622,Females
+Poisons (excl. gas),2019,0.078022633,Males
+Gas,2019,0.033948779,Males
+Firearms,2019,0.053007743,Males
+Hanging,2019,0.466051221,Males
+Other mechanisms,2019,0.12418106,Males
+Poisons (excl. gas),2019,0.075640262,Females
+Gas,2019,0.006253722,Females
+Firearms,2019,0.00238237,Females
+Hanging,2019,0.122692079,Females
+Other mechanisms,2019,0.037820131,Females
+Poisons (excl. gas),2020,0.078050335,Males
+Gas,2020,0.034724435,Males
+Firearms,2020,0.050653074,Males
+Hanging,2020,0.460337687,Males
+Other mechanisms,2020,0.13571201,Males
+Poisons (excl. gas),2020,0.068811723,Females
+Gas,2020,0.004460019,Females
+Firearms,2020,0.002548582,Females
+Hanging,2020,0.124561962,Females
+Other mechanisms,2020,0.040140172,Females
+Poisons (excl. gas),2021,0.081743003,Males
+Gas,2021,0.029262087,Males
+Firearms,2021,0.050572519,Males
+Hanging,2021,0.476145038,Males
+Other mechanisms,2021,0.112277354,Males
+Poisons (excl. gas),2021,0.071564885,Females
+Gas,2021,0.008905852,Females
+Firearms,2021,0.003498728,Females
+Hanging,2021,0.131043257,Females
+Other mechanisms,2021,0.034987277,Females
