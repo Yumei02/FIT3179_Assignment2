@@ -1,0 +1,85 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title":{"text":"Suicide Rate based on Different Methods from 2013 to 2021", "fontSize":20},
+    "vconcat": [
+      
+      {
+        "data": {"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_method_rate.csv"
+      },
+    "transform": [ {"filter": "datum.Year == 2013 || datum.Year == 2014 || datum.Year == 2015"}],
+    "facet": {
+      "column": {"field": "Year", "type": "nominal", "title":""}
+    },
+    "spec": {
+      "encoding": {
+        "x": {"field": "Mechanism", "type": "nominal", "title":""},
+        "y": {"field": "Suicide_Rate", "type": "quantitative", "axis":{"grid": false, "values":[0.0, 0.1, 0.2, 0.3, 0.4, 0.5]}, "scale":{"domain":[0, 0.5]}, "title":"Suicide Rate"},
+        "xOffset": {"field": "Sex", "type": "nominal"},
+        "color": {"field": "Sex","type":"nominal", "scale":{"domain": ["Males", "Females"],"range": ["#2b6682", "#f0cc02"]}},
+        "tooltip": [
+          {"field": "Mechanism", "type": "nominal", "title": "Mechanism"},
+          {"field": "Suicide_Rate", "type": "quantitative", "title": "Suicide rate"}
+        ]
+      },
+      "layer": [{
+        "width": {"step": 35, "for": "offset"},
+        "mark": "bar"
+      }, 
+    {
+      "mark":{"type": "text", "align":"center","dy":-4},
+      "encoding": {"text":{"field":"Suicide_Rate", "type": "quantitative", "format": ".3f"}, "color":{"value":"black"}}
+    }]
+    
+    }
+      },
+      {
+        "data": {"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_method_rate.csv"
+      },
+    "transform": [ {"filter": "datum.Year == 2016 || datum.Year == 2017 || datum.Year == 2018"}],
+    "facet": {
+      "column": {"field": "Year", "type": "nominal", "title":""}
+    },
+    "spec": {
+      "encoding": {
+        "x": {"field": "Mechanism", "type": "nominal", "title":""},
+        "y": {"field": "Suicide_Rate", "type": "quantitative", "axis":{"grid": false}, "title":"Suicide Rate"},
+        "xOffset": {"field": "Sex", "type": "nominal"},
+        "color": {"field": "Sex","type":"nominal", "scale":{"domain": ["Males", "Females"],"range": ["#2b6682", "#f0cc02"]}}
+      },
+      "layer": [{
+        "width": {"step": 35, "for": "offset"},
+        "mark": "bar"
+      }, 
+    {
+      "mark":{"type": "text", "align":"center","dy":-4},
+      "encoding": {"text":{"field":"Suicide_Rate", "type": "quantitative", "format": ".3f"}, "color":{"value":"black"}}
+    }]
+    }
+      },
+      {
+        "data": {"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_method_rate.csv"
+      },
+    "transform": [ {"filter": "datum.Year == 2019 || datum.Year == 2020 || datum.Year == 2021"}],
+    "facet": {
+      "column": {"field": "Year", "type": "nominal", "title":""}
+    },
+    "spec": {
+      "encoding": {
+        "x": {"field": "Mechanism", "type": "nominal"},
+        "y": {"field": "Suicide_Rate", "type": "quantitative", "axis":{"grid": false}, "title":"Suicide Rate"},
+        "xOffset": {"field": "Sex", "type": "nominal"},
+        "color": {"field": "Sex","type":"nominal", "scale":{"domain": ["Males", "Females"],"range": ["#2b6682", "#f0cc02"]}}
+      },
+      "layer": [{
+        "width": {"step": 35, "for": "offset"},
+        "mark": "bar"
+      }, 
+    {
+      "mark":{"type": "text", "align":"center","dy":-4},
+      "encoding": {"text":{"field":"Suicide_Rate", "type": "quantitative", "format": ".3f"}, "color":{"value":"black"}}
+    }]
+    }
+      }
+    ]
+  }
+  
