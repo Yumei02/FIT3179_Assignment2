@@ -1,0 +1,602 @@
+[
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2012,
+    "Suicide_Rate": 0.086046512,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2012,
+    "Suicide_Rate": 0.061627907,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2012,
+    "Suicide_Rate": 0.065891473,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2012,
+    "Suicide_Rate": 0.420155039,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2012,
+    "Suicide_Rate": 0.114341085,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2012,
+    "Suicide_Rate": 0.071317829,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2012,
+    "Suicide_Rate": 0.013953488,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2012,
+    "Suicide_Rate": 0.003100775,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2012,
+    "Suicide_Rate": 0.116666667,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2012,
+    "Suicide_Rate": 0.046899225,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2013,
+    "Suicide_Rate": 0.073003802,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2013,
+    "Suicide_Rate": 0.057414449,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2013,
+    "Suicide_Rate": 0.061596958,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2013,
+    "Suicide_Rate": 0.427376426,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2013,
+    "Suicide_Rate": 0.125475285,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2013,
+    "Suicide_Rate": 0.083269962,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2013,
+    "Suicide_Rate": 0.009505703,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2013,
+    "Suicide_Rate": 0.002661597,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2013,
+    "Suicide_Rate": 0.116730038,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2013,
+    "Suicide_Rate": 0.042965779,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2014,
+    "Suicide_Rate": 0.083446866,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2014,
+    "Suicide_Rate": 0.051771117,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2014,
+    "Suicide_Rate": 0.060967302,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2014,
+    "Suicide_Rate": 0.439713896,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2014,
+    "Suicide_Rate": 0.120231608,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2014,
+    "Suicide_Rate": 0.075613079,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2014,
+    "Suicide_Rate": 0.008855586,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2014,
+    "Suicide_Rate": 0.001702997,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2014,
+    "Suicide_Rate": 0.119209809,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2014,
+    "Suicide_Rate": 0.038487738,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2015,
+    "Suicide_Rate": 0.088358594,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2015,
+    "Suicide_Rate": 0.049338923,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2015,
+    "Suicide_Rate": 0.058690745,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2015,
+    "Suicide_Rate": 0.436310867,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2015,
+    "Suicide_Rate": 0.120928733,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2015,
+    "Suicide_Rate": 0.075137053,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2015,
+    "Suicide_Rate": 0.010641728,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2015,
+    "Suicide_Rate": 0.00096743,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2015,
+    "Suicide_Rate": 0.11738149,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2015,
+    "Suicide_Rate": 0.042244437,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2016,
+    "Suicide_Rate": 0.081320177,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2016,
+    "Suicide_Rate": 0.04389248,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2016,
+    "Suicide_Rate": 0.060224566,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2016,
+    "Suicide_Rate": 0.429738006,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2016,
+    "Suicide_Rate": 0.130656686,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2016,
+    "Suicide_Rate": 0.075195645,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2016,
+    "Suicide_Rate": 0.008846546,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2016,
+    "Suicide_Rate": 0.004083021,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2016,
+    "Suicide_Rate": 0.118747873,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2016,
+    "Suicide_Rate": 0.047294998,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2017,
+    "Suicide_Rate": 0.079635258,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2017,
+    "Suicide_Rate": 0.044072948,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2017,
+    "Suicide_Rate": 0.049240122,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2017,
+    "Suicide_Rate": 0.454711246,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2017,
+    "Suicide_Rate": 0.118237082,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2017,
+    "Suicide_Rate": 0.078723404,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2017,
+    "Suicide_Rate": 0.004559271,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2017,
+    "Suicide_Rate": 0.002431611,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2017,
+    "Suicide_Rate": 0.117325228,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2017,
+    "Suicide_Rate": 0.05106383,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2018,
+    "Suicide_Rate": 0.078939158,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2018,
+    "Suicide_Rate": 0.03900156,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2018,
+    "Suicide_Rate": 0.054914197,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2018,
+    "Suicide_Rate": 0.468642746,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2018,
+    "Suicide_Rate": 0.119188768,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2018,
+    "Suicide_Rate": 0.075819033,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2018,
+    "Suicide_Rate": 0.007176287,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2018,
+    "Suicide_Rate": 0.00124805,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2018,
+    "Suicide_Rate": 0.11450858,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2018,
+    "Suicide_Rate": 0.040561622,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2019,
+    "Suicide_Rate": 0.078022633,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2019,
+    "Suicide_Rate": 0.033948779,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2019,
+    "Suicide_Rate": 0.053007743,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2019,
+    "Suicide_Rate": 0.466051221,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2019,
+    "Suicide_Rate": 0.12418106,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2019,
+    "Suicide_Rate": 0.075640262,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2019,
+    "Suicide_Rate": 0.006253722,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2019,
+    "Suicide_Rate": 0.00238237,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2019,
+    "Suicide_Rate": 0.122692079,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2019,
+    "Suicide_Rate": 0.037820131,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2020,
+    "Suicide_Rate": 0.078050335,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2020,
+    "Suicide_Rate": 0.034724435,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2020,
+    "Suicide_Rate": 0.050653074,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2020,
+    "Suicide_Rate": 0.460337687,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2020,
+    "Suicide_Rate": 0.13571201,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2020,
+    "Suicide_Rate": 0.068811723,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2020,
+    "Suicide_Rate": 0.004460019,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2020,
+    "Suicide_Rate": 0.002548582,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2020,
+    "Suicide_Rate": 0.124561962,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2020,
+    "Suicide_Rate": 0.040140172,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2021,
+    "Suicide_Rate": 0.081743003,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2021,
+    "Suicide_Rate": 0.029262087,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2021,
+    "Suicide_Rate": 0.050572519,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2021,
+    "Suicide_Rate": 0.476145038,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2021,
+    "Suicide_Rate": 0.112277354,
+    "Sex": "Males"
+  },
+  {
+    "Mechanism": "Poisons (excl. gas)",
+    "Year": 2021,
+    "Suicide_Rate": 0.071564885,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Gas",
+    "Year": 2021,
+    "Suicide_Rate": 0.008905852,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Firearms",
+    "Year": 2021,
+    "Suicide_Rate": 0.003498728,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Hanging",
+    "Year": 2021,
+    "Suicide_Rate": 0.131043257,
+    "Sex": "Females"
+  },
+  {
+    "Mechanism": "Other mechanisms",
+    "Year": 2021,
+    "Suicide_Rate": 0.034987277,
+    "Sex": "Females"
+  }
+]
