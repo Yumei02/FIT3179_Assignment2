@@ -88,7 +88,7 @@
       "layer": [
         {
           "height": 600,
-          "width":1378,
+          "width":1300,
           "mark": {"type": "rect"},
           "encoding": {
             "x": {"field": "nx", "type": "quantitative", "axis": null},

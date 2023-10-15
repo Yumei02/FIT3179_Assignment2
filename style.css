@@ -4,8 +4,7 @@
     padding-right: 50px;
     border-bottom-style: solid;
     border-color: black;
-    margin-left: 10px;
-    margin-right: 10px;
+    
 }
 
 #main p{
@@ -25,12 +24,12 @@
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .row1{
     display: block;
 }
 
-#map, #ranking_vis{
-    height: 500;
-}
+

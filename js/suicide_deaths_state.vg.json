@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "The Ranking of Number of Suicide between Different States in Australia",
-  "width": 500, "height": 460,
+  "width": 600, "height": 400,
   "data": {"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_deaths_dataset1.json"},
   "params": [
     { "name": "Top_N", "value": 5,
