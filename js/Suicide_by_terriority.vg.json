@@ -1,246 +1,163 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": "container",
-    "height": 400,
-    "data": {
-      "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_rate_by_terriority.csv"
-    },
-    
-    "transform": [
-      {
-        "aggregate": [
-          {
-            "op": "count",
-            "as": "count_*"
-          }
-        ],
-        "groupby": [
-          "State",
-          "PHN name"
-        ]
-      },
-      {
-        "stack": "count_*",
-        "groupby": [],
-        "as": [
-          "stack_count_State1",
-          "stack_count_State2"
-        ],
-        "offset": "normalize",
-        "sort": [
-          {
-            "field": "State",
-            "order": "ascending"
-          }
-        ]
-      },
-      {
-        "window": [
-          {
-            "op": "min",
-            "field": "stack_count_State1",
-            "as": "x"
-          },
-          {
-            "op": "max",
-            "field": "stack_count_State2",
-            "as": "x2"
-          },
-          {
-            "op": "dense_rank",
-            "as": "rank_PHN"
-          },
-          {
-            "op": "distinct",
-            "field": "PHN name",
-            "as": "distinct_PHN"
-          }
-        ],
-        "groupby": [
-          "State"
-        ],
-        "frame": [
-          null,
-          null
-        ],
-        "sort": [
-          {
-            "field": "PHN name",
-            "order": "ascending"
-          }
-        ]
-      },
-      {
-        "window": [
-          {
-            "op": "dense_rank",
-            "as": "rank_State"
-          }
-        ],
-        "frame": [
-          null,
-          null
-        ],
-        "sort": [
-          {
-            "field": "State",
-            "order": "ascending"
-          }
-        ]
-      },
-      {
-        "stack": "count_*",
-        "groupby": [
-          "State"
-        ],
-        "as": [
-          "y",
-          "y2"
-        ],
-        "offset": "normalize",
-        "sort": [
-          {
-            "field": "PHN name",
-            "order": "ascending"
-          }
-        ]
-      },
-      {
-        "joinaggregate": [
-            {"op": "sum", "field": "Suicide_Rate", "as": "Suicide_Rate"}
-          ],
-          "groupby": ["State"]
-      },
-      {
-        "calculate": "datum.y + (datum.Suicide_Rate - 1) * datum.distinct_PHN * 0.01 / 3",
-        "as": "ny"
-      },
-      {
-        "calculate": "datum.y2 + (datum.Suicide_Rate - 1) * datum.distinct_PHN * 0.01 / 3",
-        "as": "ny2"
-      },
-      {
-        "calculate": "datum.x + (datum.rank_State - 1) * 0.01",
-        "as": "nx"
-      },
-      {
-        "calculate": "datum.x2 + (datum.rank_State - 1) * 0.01",
-        "as": "nx2"
-      },
-      {
-        "calculate": "(datum.nx+datum.nx2)/2",
-        "as": "xc"
-      },
-      {
-        "calculate": "(datum.ny+datum.ny2)/2",
-        "as": "yc"
-      }
-    ],
-    "vconcat": [
-      {
-        "mark": {
-          "type": "text",
-          "baseline": "middle",
-          "align": "center"
-        },
-        "encoding": {
-          "x": {
-            "aggregate": "min",
-            "field": "xc",
-            "title": "State",
-            "axis": {
-              "orient": "top"
-            }
-          },
-          "color": {
-            "field": "State",
-            "legend": null
-          },
-          "text": {"field": "State"}
-        }
-      },
-      {
-        "layer": [
-          {
-            "mark": {
-              "type": "rect"
-            },
-            "encoding": {
-              "x": {
-                "field": "nx",
-                "type": "quantitative",
-                "axis": null
-              },
-              "x2": {"field": "nx2"},
-              "y": {
-                "field": "ny",
-                "type": "quantitative"
-              },
-              "y2": {"field": "ny2"},
-              "color": {
-                "field": "State",
-                "type": "nominal",
-                "legend": null
-              },
-              "opacity": {
-                "field": "PHN name",
-                "type": "nominal",
-                "legend": null
-              },
-              "tooltip": [
-                {
-                  "field": "State",
-                  "type": "nominal"
-                },
-                {
-                  "field": "PHN name",
-                  "type": "nominal"
-                }
-              ]
-            }
-          },
-          {
-            "mark": {
-              "type": "text",
-              "baseline": "middle"
-            },
-            "encoding": {
-              "x": {
-                "field": "xc",
-                "type": "quantitative",
-                "axis": null
-              },
-              "y": {
-                "field": "yc",
-                "type": "quantitative",
-                "axis": {
-                  "title": "Cylinders"
-                }
-              },
-              "text": {
-                "field": "PHN name",
-                "type": "nominal"
-              }
-            }
-          }
-        ]
-      }
-    ],
-    "resolve": {
-      "scale": {
-        "x": "shared"
-      }
-    },
-    "config": {
-      "view": {
-        "stroke": ""
-      },
-      "concat": {"spacing": 0},
-      "axis": {
-        "domain": false,
-        "ticks": false,
-        "labels": false,
-        "grid": false
-      }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "params": [
+    {
+    "name": "Year_selection",
+    "value": 2012,
+    "bind": {
+    "input": "range",
+    "min": 2012,
+    "max": 2021,
+    "step": 1,
+    "name": "Year: "
     }
+    }
+    ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/Suicide_rate_by_terriority.csv"
+  },
+  "transform": [
+    {"filter": "datum.Year == Year_selection"},
+    {
+      "stack": "Suicide_Rate",
+      "groupby": [],
+      "as": ["stack_count_Country1", "stack_count_Country2"],
+      "offset": "normalize",
+      "sort": [{"field": "State", "order": "ascending"}]
+    },
+    {
+      "window": [
+        
+        {"op": "min", "field": "stack_count_Country1", "as": "x"},
+        {"op": "max", "field": "stack_count_Country2", "as": "x2"},
+        {"op": "dense_rank", "as": "rank_sector_id"},
+        {"op": "distinct", "field": "PHN_name", "as": "distinct_sector_id"}
+      ],
+      "groupby": ["State"],
+      "frame": [null, null],
+      "sort": [{"field": "PHN_name", "order": "ascending"}]
+    },
+    {
+      "window": [{"op": "dense_rank", "as": "rank_Country"}],
+      "frame": [null, null],
+      "sort": [{"field": "State", "order": "ascending"}]
+    },
+    {
+      "stack": "Suicide_Rate",
+      "groupby": ["State"],
+      "as": ["y", "y2"],
+      "offset": "normalize",
+      "sort": [{"field": "PHN_name", "order": "ascending"}]
+    },
+    {
+      "calculate": "datum.y + (datum.rank_sector_id - 1) * datum.distinct_sector_id * 0.01 / 3",
+      "as": "ny"
+    },
+    {
+      "calculate": "datum.y2 + (datum.rank_sector_id - 1) * datum.distinct_sector_id * 0.01 / 3",
+      "as": "ny2"
+    },
+    {"calculate": "datum.x + (datum.rank_Country - 1) * 0.01", "as": "nx"},
+    {"calculate": "datum.x2 + (datum.rank_Country - 1) * 0.01", "as": "nx2"},
+    {"calculate": "(datum.nx+datum.nx2)/2", "as": "xc"},
+    {"calculate": "(datum.ny+datum.ny2)/2", "as": "yc"}
+  ],
+  "vconcat": [
+    
+    {
+      
+      "mark": {"type": "text", "baseline": "middle", "align": "center", "fontSize":20},
+      "encoding": {
+        "x": {
+          "aggregate": "min",
+          "field": "xc",
+          "title": null,
+          "axis": {"orient": "top"}
+        },
+        "color": {
+          "field": "State",
+          "scale": {
+            "domain": ["NSW", "Vic", "Qld", "SA", "WA", "Tas", "NT", "ACT"]
+          },
+          "legend": null
+        },
+        "text": {"field": "State"}
+      }
+    },
+    {
+      "layer": [
+        {
+          "height": 900,
+          "width": 1005,
+          "mark": {"type": "rect"},
+          "encoding": {
+            "x": {"field": "nx", "type": "quantitative", "axis": null},
+            "x2": {"field": "nx2"},
+            "y": {"field": "ny", "type": "quantitative"},
+            "y2": {"field": "ny2"},
+            "color": {"field": "State", "type": "nominal", "legend": null},
+            "opacity": {
+              "field": "PHN_name",
+              "type": "nominal",
+              "legend": null
+            },
+            "tooltip": [
+              {"field": "State", "type": "nominal"},
+              {"field": "PHN_name", "type": "nominal"},
+              {
+                "field": "Suicide_Rate",
+                "type": "quantitative",
+                "format": ".2f",
+                "title": "Suicide Number"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {"type": "text", "baseline": "bottom"},
+          "encoding": {
+            "x": {"field": "xc", "type": "quantitative", "axis": null},
+            "y": {
+              "field": "yc",
+              "type": "quantitative",
+              "axis": {"title": "Suicide Number"}
+            },
+            "text": {"field": "PHN_name", "type": "nominal"},
+            "opacity": {
+              "condition": {
+                "test": "datum.State == 'Tas' || datum.State == 'NT' || datum.State == 'ACT'",
+                "value": 0
+              },
+              "value": 1
+            }
+          }
+        },
+        {
+          "mark": {"type": "text", "baseline": "bottom", "dy":10},
+          "encoding": {
+            "x": {"field": "xc", "type": "quantitative", "axis": null},
+            "y": {
+              "field": "yc",
+              "type": "quantitative",
+              "axis": {"title": "Suicide Number"}
+            },
+            "text": {"field": "Suicide_Rate", "type": "quantitative"},
+            "opacity": {
+              "condition": {
+                "test": "datum.State == 'Tas' || datum.State == 'NT' || datum.State == 'ACT'",
+                "value": 0
+              },
+              "value": 1
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "resolve": {"scale": {"x": "shared"}},
+  "config": {
+    "view": {"stroke": ""},
+    "concat": {"spacing": 10},
+    "axis": {"domain": false, "ticks": false, "labels": false, "grid": false}
   }
+}

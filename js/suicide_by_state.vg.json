@@ -52,19 +52,19 @@
           {"filter": "datum.Year==Year_selection"},
           {
             "calculate": "datum.NumberofSuicideDeath/30315*100",
-            "as": "rate"
+            "as": "Rate"
           }
         ],
         
         "mark": {"type": "geoshape", "stroke": "white"},
         "encoding": {
           "color": {
-            "field": "rate",
+            "field": "Rate",
             "type": "quantitative",
             "scale": {
               "type": "threshold",
               "domain": [1, 2, 3, 4],
-              "range": ["#ff4f55", "#f0181f", "#cc161c", "#ab1318"]
+              "range": ["#f7cb5c", "#f78c45", "#e03d24", "#ab070a", "#690507"]
             }
           },
           
@@ -72,7 +72,7 @@
             {"field": "properties.STE_NAME16", "type": "nominal", "title": "State"},
             {"field": "NumberofSuicideDeath", "type": "quantitative", "title":"Number of Suicide Death"},
             {
-              "field": "rate",
+              "field": "Rate",
               "type": "quantitative",
               "title":"Suicide Rate",
               "format": ".2f"
@@ -96,16 +96,21 @@
           },
           {"filter": "datum.Year==Year_selection"},
           {
+            "calculate": "datum.NumberofSuicideDeath/30315*100",
+            "as": "Rate"
+          },
+          
+          {
             "calculate": "datum.latitude-0.7",
             "as": "position"
           }
         ],
         
-        "mark":{"type": "text"},
+        "mark":{"type": "text", "fontWeight":"bolder"},
         
         "encoding": {"longitude":{"field":"longitude", "type": "quantitative"},
                      "latitude":{"field":"position", "type": "quantitative"},
-                    "text":{"field":"NumberofSuicideDeath", "type": "quantitative"}
+                    "text":{"field":"Rate", "type": "quantitative", "format":".3f"}
         }
       },
       
@@ -122,7 +127,7 @@
         "field": "properties.STE_NAME16",
         "oneOf": ["Australian Capital Territory", "New South Wales","Northern Territory", "Queensland", "South Australia", "Tasmania", "Victoria", "Western Australia"]
       }}],
-        "mark":{"type": "text", "dy":-4, "dx":5},
+        "mark":{"type": "text", "dy":-4, "dx":5, "fontWeight":"bolder"},
         "encoding": {"longitude":{"field":"longitude", "type": "quantitative"},
                      "latitude":{"field":"latitude", "type": "quantitative"},
                     "text":{"field":"properties.STE_NAME16", "type": "nominal"}
