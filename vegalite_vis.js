@@ -4,7 +4,7 @@ vegaEmbed("#map", vg1).then(function(result) {}).catch(console.error);
 var vg2 = "js/suicide_deaths_state.vg.json";
 vegaEmbed("#ranking_vis", vg2).then(function(result) {}).catch(console.error);
 
-var vg3 = "js/suicide_by_sex_age.vg.json";
+var vg3 = "js/suicide_method_sex.vg.json";
 vegaEmbed("#sex_vis", vg3).then(function(result) {}).catch(console.error);
 
 var vg4 = "js/Relationship_between_suicide.vg.json";
