@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "The Ranking of Number of Suicide between Different States in Australia",
-  "width": "container", "height": 350,
+  "width": "700", "height": 350,
   "data": {"url": "https://raw.githubusercontent.com/Yumei02/FIT3179_Assignment2/main/suicide_deaths_dataset1.json"},
   "params": [
     { "name": "Top_N", "value": 5 ,
@@ -61,7 +61,10 @@
       "encoding": {
         "color": {
             "condition":  {"param": "sel_brand_leg", "empty": false, "value": "black"} ,
-            "field": "State"
+            "field": "State",
+            "scale":{"type": "threshold",
+            "domain": ["Australian Capital Territory", "New South Wales", "Northern Territory", "Queensland", "South Australia", "Tasmania", "Victoria", "Western Australia"],
+            "range": ["#1767ad", "#f79539", "#f5314b", "#57bfd9", "#0ec953", "#f5f533", "#b11cd6", "#ff91cf"]}
         },"tooltip": [
           
           {"field": "State", "type": "nominal", "title": "State"},
