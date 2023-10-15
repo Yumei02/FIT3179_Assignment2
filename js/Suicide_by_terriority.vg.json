@@ -21,24 +21,24 @@
     {
       "stack": "Suicide_Rate",
       "groupby": [],
-      "as": ["stack_count_Country1", "stack_count_Country2"],
+      "as": ["stack_count_State1", "stack_count_State2"],
       "offset": "normalize",
       "sort": [{"field": "State", "order": "ascending"}]
     },
     {
       "window": [
         
-        {"op": "min", "field": "stack_count_Country1", "as": "x"},
-        {"op": "max", "field": "stack_count_Country2", "as": "x2"},
-        {"op": "dense_rank", "as": "rank_sector_id"},
-        {"op": "distinct", "field": "PHN_name", "as": "distinct_sector_id"}
+        {"op": "min", "field": "stack_count_State1", "as": "x"},
+        {"op": "max", "field": "stack_count_State2", "as": "x2"},
+        {"op": "dense_rank", "as": "rank_phn"},
+        {"op": "distinct", "field": "PHN_name", "as": "distinct_phn"}
       ],
       "groupby": ["State"],
       "frame": [null, null],
       "sort": [{"field": "PHN_name", "order": "ascending"}]
     },
     {
-      "window": [{"op": "dense_rank", "as": "rank_Country"}],
+      "window": [{"op": "dense_rank", "as": "rank_State"}],
       "frame": [null, null],
       "sort": [{"field": "State", "order": "ascending"}]
     },
@@ -50,15 +50,15 @@
       "sort": [{"field": "PHN_name", "order": "ascending"}]
     },
     {
-      "calculate": "datum.y + (datum.rank_sector_id - 1) * datum.distinct_sector_id * 0.01 / 3",
+      "calculate": "datum.y + (datum.rank_phn - 1) * datum.distinct_phn * 0.01 / 3",
       "as": "ny"
     },
     {
-      "calculate": "datum.y2 + (datum.rank_sector_id - 1) * datum.distinct_sector_id * 0.01 / 3",
+      "calculate": "datum.y2 + (datum.rank_phn - 1) * datum.distinct_phn * 0.01 / 3",
       "as": "ny2"
     },
-    {"calculate": "datum.x + (datum.rank_Country - 1) * 0.01", "as": "nx"},
-    {"calculate": "datum.x2 + (datum.rank_Country - 1) * 0.01", "as": "nx2"},
+    {"calculate": "datum.x + (datum.rank_State - 1) * 0.01", "as": "nx"},
+    {"calculate": "datum.x2 + (datum.rank_State - 1) * 0.01", "as": "nx2"},
     {"calculate": "(datum.nx+datum.nx2)/2", "as": "xc"},
     {"calculate": "(datum.ny+datum.ny2)/2", "as": "yc"}
   ],
@@ -87,8 +87,8 @@
     {
       "layer": [
         {
-          "height": 900,
-          "width": 1005,
+          "height": 600,
+          "width":1378,
           "mark": {"type": "rect"},
           "encoding": {
             "x": {"field": "nx", "type": "quantitative", "axis": null},
@@ -114,7 +114,7 @@
           }
         },
         {
-          "mark": {"type": "text", "baseline": "bottom"},
+          "mark": {"type": "text", "baseline": "bottom", "fontWeight":"bolder"},
           "encoding": {
             "x": {"field": "xc", "type": "quantitative", "axis": null},
             "y": {
@@ -133,7 +133,7 @@
           }
         },
         {
-          "mark": {"type": "text", "baseline": "bottom", "dy":10},
+          "mark": {"type": "text", "baseline": "bottom", "dy":10, "fontWeight":"bold"},
           "encoding": {
             "x": {"field": "xc", "type": "quantitative", "axis": null},
             "y": {
