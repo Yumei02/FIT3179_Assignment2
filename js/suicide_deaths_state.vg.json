@@ -44,7 +44,9 @@
        {
       "mark": {"type": "line", "interpolate": "monotone" },
       "encoding": {
-        "color": { "field": "State" } ,
+        "color": { "field": "State" , "scale":{"type": "threshold",
+        "domain": ["Australian Capital Territory", "New South Wales", "Northern Territory", "Queensland", "South Australia", "Tasmania", "Victoria", "Western Australia"],
+        "range": ["#1767ad", "#f79539", "#f5314b", "#57bfd9", "#0ec953", "#f5f533", "#b11cd6", "#ff91cf"]}} ,
         "size":{
             "condition":  {"param": "sel_brand_leg", "empty": false, "value": 3},
             "value": 1
