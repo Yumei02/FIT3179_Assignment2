@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title":{"text":"Suicide Rate based on Different Methods from 2013 to 2021", "fontSize":20},
     
     "vconcat": [
       
@@ -19,18 +18,14 @@
         "color": {"field": "Sex","type":"nominal", "scale":{"domain": ["Males", "Females"],"range": ["#2b6682", "#f0cc02"]}},
         "tooltip": [
           {"field": "Mechanism", "type": "nominal", "title": "Mechanism"},
-          {"field": "Suicide_Rate", "type": "quantitative", "title": "Suicide rate"}
+          {"field": "Suicide_Rate", "type": "quantitative", "title": "Suicide rate"},
+          {"field": "Sex", "type": "nominal", "title": "Gender"}
         ]
       },
       "layer": [{
         "width": 430,
         "mark": {"type": "bar"}
-      }, 
-      
-    {
-      "mark":{"type": "text", "align":"center","dy":-4},
-      "encoding": {"text":{"field":"Suicide_Rate", "type": "quantitative", "format": ".3f"}, "color":{"value":"black"}}
-    }]
+      }]
     
     }
       },
@@ -46,17 +41,17 @@
         "x": {"field": "Mechanism", "type": "nominal", "title":""},
         "y": {"field": "Suicide_Rate", "type": "quantitative", "axis":{"grid": false}, "title":"Suicide Rate"},
         "xOffset": {"field": "Sex", "type": "nominal"},
-        "color": {"field": "Sex","type":"nominal", "scale":{"domain": ["Males", "Females"],"range": ["#2b6682", "#f0cc02"]}}
+        "color": {"field": "Sex","type":"nominal", "scale":{"domain": ["Males", "Females"],"range": ["#2b6682", "#f0cc02"]}},
+        "tooltip": [
+          {"field": "Mechanism", "type": "nominal", "title": "Mechanism"},
+          {"field": "Suicide_Rate", "type": "quantitative", "title": "Suicide rate"},
+          {"field": "Sex", "type": "nominal", "title": "Gender"}
+        ]
       },
       "layer": [{
         "width": 430,
         "mark": "bar"
-      },
-       
-    {
-      "mark":{"type": "text", "align":"center","dy":-4},
-      "encoding": {"text":{"field":"Suicide_Rate", "type": "quantitative", "format": ".3f"}, "color":{"value":"black"}}
-    }]
+      }]
     }
       },
       {
@@ -73,18 +68,20 @@
         "x": {"field": "Mechanism", "type": "nominal"},
         "y": {"field": "Suicide_Rate", "type": "quantitative", "axis":{"grid": false}, "title":"Suicide Rate"},
         "xOffset": {"field": "Sex", "type": "nominal"},
-        "color": {"field": "Sex","type":"nominal", "scale":{"domain": ["Males", "Females"],"range": ["#2b6682", "#f0cc02"]}}
+        "color": {"field": "Sex","type":"nominal", "scale":{"domain": ["Males", "Females"],"range": ["#2b6682", "#f0cc02"]}},
+        "tooltip": [
+          {"field": "Mechanism", "type": "nominal", "title": "Mechanism"},
+          {"field": "Suicide_Rate", "type": "quantitative", "title": "Suicide rate"},
+          {"field": "Sex", "type": "nominal", "title": "Gender"}
+        ]
       },
       "layer": [{
         "width": 430,
         "mark": "bar"
-      }, 
-    {
-      "mark":{"type": "text", "align":"center","dy":-4},
-      "encoding": {"text":{"field":"Suicide_Rate", "type": "quantitative", "format": ".3f"}, "color":{"value":"black"}}
-    }]
+      }]
     }
       }
-    ]
+    ],
+    "config": {"view": {"strokeOpacity":0}}
   }
   

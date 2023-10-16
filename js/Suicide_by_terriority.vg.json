@@ -77,7 +77,8 @@
         "color": {
           "field": "State",
           "scale": {
-            "domain": ["NSW", "Vic", "Qld", "SA", "WA", "Tas", "NT", "ACT"]
+            "domain": ["NSW", "Vic", "Qld", "SA", "WA", "Tas", "NT", "ACT"],
+            "range": ["#f79539", "#b11cd6", "#57bfd9", "#0ec953", "#ff91cf", "#f5f533", "#f5314b", "#1767ad"]
           },
           "legend": null
         },
