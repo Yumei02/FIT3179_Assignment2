@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "The Suicide of Death in Australia",
     "width":1300,
     "height": 500,
     "data": {

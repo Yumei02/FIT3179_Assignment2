@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Suicide Rate by Age Groups for Males and Feamles",
     "width": 1300,
     "height": 450,
     "params": [

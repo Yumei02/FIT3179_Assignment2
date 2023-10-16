@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "The Relationship between Ambulance Attendences for Suicide or Suicide Attempts by Modality",
     "width": 1300,
     "height": 400,
     "data": {
@@ -33,12 +32,17 @@
                  "type": "nominal",
                  "scale": {
                     "domain": ["Alcohol and other drugs", "Hanging","Other"],
-                    "range": ["#ed3228", "#f0ea3c", "#5157f0"]
+                    "range": ["#f0ea3c", "#ed3228", "#5157f0"]
                   }
                  },
+      "tooltip": [
+      {"field": "Modality", "type": "nominal", "title": "Modality"},
+      {"field": "Suicide_Attempt", "type": "quantitative", "title": "Suicide attempt"},
+      {"field": "Death_by_suicide", "type": "quantitative", "title": "Death by suicide"}
+                ],
                  
       "shape": {"field": "Modality", "type": "nominal","scale": {
-        "domain": ["AOD", "Hanging","Other"],
+        "domain": ["Alcohol and other drugs", "Hanging","Other"],
         "range": ["circle", "square", "triangle-up"]
       }},
       "opacity":{"condition":{"selection":"Modality_selection", "value":1}, "value":0}
