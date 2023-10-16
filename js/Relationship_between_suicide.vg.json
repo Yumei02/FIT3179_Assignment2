@@ -32,7 +32,7 @@
       "color": {"field": "Modality", 
                  "type": "nominal",
                  "scale": {
-                    "domain": ["AOD", "Hanging","Other"],
+                    "domain": ["Alcohol and other drugs", "Hanging","Other"],
                     "range": ["#ed3228", "#f0ea3c", "#5157f0"]
                   }
                  },
